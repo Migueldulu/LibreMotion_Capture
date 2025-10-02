@@ -1,0 +1,2 @@
+-keep class io.github.migueldulu.telemetria.AyudanteHttp { *; }
+-keepnames class io.github.migueldulu.telemetria.AyudanteHttp

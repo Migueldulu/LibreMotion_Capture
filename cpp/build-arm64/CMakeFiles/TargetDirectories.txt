@@ -1,0 +1,3 @@
+C:/Users/miguel/AndroidStudioProjects/ProyectoFInal/cpp/build-arm64/CMakeFiles/telemetria.dir
+C:/Users/miguel/AndroidStudioProjects/ProyectoFInal/cpp/build-arm64/CMakeFiles/edit_cache.dir
+C:/Users/miguel/AndroidStudioProjects/ProyectoFInal/cpp/build-arm64/CMakeFiles/rebuild_cache.dir

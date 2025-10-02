@@ -1,0 +1,5 @@
+# ninja log v7
+1	467	7811090118799858	CMakeFiles/telemetria.dir/TelemetriaAPI.cpp.o	13fc8964c0f680d9
+4	579	7811090118833098	CMakeFiles/telemetria.dir/GestorTelemetria.cpp.o	b5fec603aa1bb4e4
+6	629	7811090118858154	CMakeFiles/telemetria.dir/AndroidUploader.cpp.o	538c2812ad6b9663
+630	677	7811090125090746	libtelemetria.so	44f176fb93ce7e88
