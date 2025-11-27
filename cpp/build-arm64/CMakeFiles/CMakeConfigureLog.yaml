@@ -49,6 +49,7 @@ events:
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Gradle/gradle-9.1.0/bin/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Launcher/"
@@ -234,6 +235,15 @@ events:
       - "C:/Gradle/gradle-9.1.0/bin/samu.com"
       - "C:/Gradle/gradle-9.1.0/bin/samu.exe"
       - "C:/Gradle/gradle-9.1.0/bin/samu"
+      - "C:/Program Files/Docker/Docker/resources/bin/ninja-build.com"
+      - "C:/Program Files/Docker/Docker/resources/bin/ninja-build.exe"
+      - "C:/Program Files/Docker/Docker/resources/bin/ninja-build"
+      - "C:/Program Files/Docker/Docker/resources/bin/ninja.com"
+      - "C:/Program Files/Docker/Docker/resources/bin/ninja.exe"
+      - "C:/Program Files/Docker/Docker/resources/bin/ninja"
+      - "C:/Program Files/Docker/Docker/resources/bin/samu.com"
+      - "C:/Program Files/Docker/Docker/resources/bin/samu.exe"
+      - "C:/Program Files/Docker/Docker/resources/bin/samu"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/ninja-build.com"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/ninja-build.exe"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/ninja-build"
@@ -345,6 +355,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:\\Gradle\\gradle-9.1.0\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
         - "C:\\Users\\miguel\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
         - "C:\\Users\\miguel\\AppData\\Local\\Programs\\Python\\Python313\\"
         - "C:\\Users\\miguel\\AppData\\Local\\Programs\\Python\\Launcher\\"
@@ -409,6 +420,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:\\Gradle\\gradle-9.1.0\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
         - "C:\\Users\\miguel\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
         - "C:\\Users\\miguel\\AppData\\Local\\Programs\\Python\\Python313\\"
         - "C:\\Users\\miguel\\AppData\\Local\\Programs\\Python\\Launcher\\"
@@ -483,6 +495,7 @@ events:
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Gradle/gradle-9.1.0/bin/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Launcher/"
@@ -524,6 +537,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:\\Gradle\\gradle-9.1.0\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
         - "C:\\Users\\miguel\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
         - "C:\\Users\\miguel\\AppData\\Local\\Programs\\Python\\Python313\\"
         - "C:\\Users\\miguel\\AppData\\Local\\Programs\\Python\\Launcher\\"
@@ -576,6 +590,7 @@ events:
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Gradle/gradle-9.1.0/bin/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Launcher/"
@@ -617,6 +632,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:\\Gradle\\gradle-9.1.0\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
         - "C:\\Users\\miguel\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
         - "C:\\Users\\miguel\\AppData\\Local\\Programs\\Python\\Python313\\"
         - "C:\\Users\\miguel\\AppData\\Local\\Programs\\Python\\Launcher\\"
@@ -669,6 +685,7 @@ events:
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Gradle/gradle-9.1.0/bin/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Launcher/"
@@ -710,6 +727,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:\\Gradle\\gradle-9.1.0\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
         - "C:\\Users\\miguel\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
         - "C:\\Users\\miguel\\AppData\\Local\\Programs\\Python\\Python313\\"
         - "C:\\Users\\miguel\\AppData\\Local\\Programs\\Python\\Launcher\\"
@@ -762,6 +780,7 @@ events:
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Gradle/gradle-9.1.0/bin/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Launcher/"
@@ -803,6 +822,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:\\Gradle\\gradle-9.1.0\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
         - "C:\\Users\\miguel\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
         - "C:\\Users\\miguel\\AppData\\Local\\Programs\\Python\\Python313\\"
         - "C:\\Users\\miguel\\AppData\\Local\\Programs\\Python\\Launcher\\"
@@ -855,6 +875,7 @@ events:
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Gradle/gradle-9.1.0/bin/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Launcher/"
@@ -896,6 +917,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:\\Gradle\\gradle-9.1.0\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
         - "C:\\Users\\miguel\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
         - "C:\\Users\\miguel\\AppData\\Local\\Programs\\Python\\Python313\\"
         - "C:\\Users\\miguel\\AppData\\Local\\Programs\\Python\\Launcher\\"
@@ -948,6 +970,7 @@ events:
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Gradle/gradle-9.1.0/bin/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Launcher/"
@@ -989,6 +1012,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:\\Gradle\\gradle-9.1.0\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
         - "C:\\Users\\miguel\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
         - "C:\\Users\\miguel\\AppData\\Local\\Programs\\Python\\Python313\\"
         - "C:\\Users\\miguel\\AppData\\Local\\Programs\\Python\\Launcher\\"
@@ -1041,6 +1065,7 @@ events:
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Gradle/gradle-9.1.0/bin/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Launcher/"
@@ -1082,6 +1107,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:\\Gradle\\gradle-9.1.0\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
         - "C:\\Users\\miguel\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
         - "C:\\Users\\miguel\\AppData\\Local\\Programs\\Python\\Python313\\"
         - "C:\\Users\\miguel\\AppData\\Local\\Programs\\Python\\Launcher\\"
@@ -1133,6 +1159,7 @@ events:
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Gradle/gradle-9.1.0/bin/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Launcher/"
@@ -1198,6 +1225,9 @@ events:
       - "C:/Gradle/gradle-9.1.0/bin/tapi.com"
       - "C:/Gradle/gradle-9.1.0/bin/tapi.exe"
       - "C:/Gradle/gradle-9.1.0/bin/tapi"
+      - "C:/Program Files/Docker/Docker/resources/bin/tapi.com"
+      - "C:/Program Files/Docker/Docker/resources/bin/tapi.exe"
+      - "C:/Program Files/Docker/Docker/resources/bin/tapi"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/tapi.com"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/tapi.exe"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/tapi"
@@ -1263,6 +1293,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:\\Gradle\\gradle-9.1.0\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
         - "C:\\Users\\miguel\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
         - "C:\\Users\\miguel\\AppData\\Local\\Programs\\Python\\Python313\\"
         - "C:\\Users\\miguel\\AppData\\Local\\Programs\\Python\\Launcher\\"
@@ -1317,6 +1348,7 @@ events:
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Gradle/gradle-9.1.0/bin/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Launcher/"
@@ -1382,6 +1414,9 @@ events:
       - "C:/Gradle/gradle-9.1.0/bin/llvm-ar-18.0.com"
       - "C:/Gradle/gradle-9.1.0/bin/llvm-ar-18.0.exe"
       - "C:/Gradle/gradle-9.1.0/bin/llvm-ar-18.0"
+      - "C:/Program Files/Docker/Docker/resources/bin/llvm-ar-18.0.com"
+      - "C:/Program Files/Docker/Docker/resources/bin/llvm-ar-18.0.exe"
+      - "C:/Program Files/Docker/Docker/resources/bin/llvm-ar-18.0"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/llvm-ar-18.0.com"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/llvm-ar-18.0.exe"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/llvm-ar-18.0"
@@ -1472,6 +1507,9 @@ events:
       - "C:/Gradle/gradle-9.1.0/bin/llvm-ar-18.com"
       - "C:/Gradle/gradle-9.1.0/bin/llvm-ar-18.exe"
       - "C:/Gradle/gradle-9.1.0/bin/llvm-ar-18"
+      - "C:/Program Files/Docker/Docker/resources/bin/llvm-ar-18.com"
+      - "C:/Program Files/Docker/Docker/resources/bin/llvm-ar-18.exe"
+      - "C:/Program Files/Docker/Docker/resources/bin/llvm-ar-18"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/llvm-ar-18.com"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/llvm-ar-18.exe"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/llvm-ar-18"
@@ -1562,6 +1600,9 @@ events:
       - "C:/Gradle/gradle-9.1.0/bin/llvm-ar18.com"
       - "C:/Gradle/gradle-9.1.0/bin/llvm-ar18.exe"
       - "C:/Gradle/gradle-9.1.0/bin/llvm-ar18"
+      - "C:/Program Files/Docker/Docker/resources/bin/llvm-ar18.com"
+      - "C:/Program Files/Docker/Docker/resources/bin/llvm-ar18.exe"
+      - "C:/Program Files/Docker/Docker/resources/bin/llvm-ar18"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/llvm-ar18.com"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/llvm-ar18.exe"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/llvm-ar18"
@@ -1628,6 +1669,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:\\Gradle\\gradle-9.1.0\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
         - "C:\\Users\\miguel\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
         - "C:\\Users\\miguel\\AppData\\Local\\Programs\\Python\\Python313\\"
         - "C:\\Users\\miguel\\AppData\\Local\\Programs\\Python\\Launcher\\"
@@ -1682,6 +1724,7 @@ events:
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Gradle/gradle-9.1.0/bin/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Launcher/"
@@ -1747,6 +1790,9 @@ events:
       - "C:/Gradle/gradle-9.1.0/bin/llvm-ranlib-18.0.com"
       - "C:/Gradle/gradle-9.1.0/bin/llvm-ranlib-18.0.exe"
       - "C:/Gradle/gradle-9.1.0/bin/llvm-ranlib-18.0"
+      - "C:/Program Files/Docker/Docker/resources/bin/llvm-ranlib-18.0.com"
+      - "C:/Program Files/Docker/Docker/resources/bin/llvm-ranlib-18.0.exe"
+      - "C:/Program Files/Docker/Docker/resources/bin/llvm-ranlib-18.0"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/llvm-ranlib-18.0.com"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/llvm-ranlib-18.0.exe"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/llvm-ranlib-18.0"
@@ -1837,6 +1883,9 @@ events:
       - "C:/Gradle/gradle-9.1.0/bin/llvm-ranlib-18.com"
       - "C:/Gradle/gradle-9.1.0/bin/llvm-ranlib-18.exe"
       - "C:/Gradle/gradle-9.1.0/bin/llvm-ranlib-18"
+      - "C:/Program Files/Docker/Docker/resources/bin/llvm-ranlib-18.com"
+      - "C:/Program Files/Docker/Docker/resources/bin/llvm-ranlib-18.exe"
+      - "C:/Program Files/Docker/Docker/resources/bin/llvm-ranlib-18"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/llvm-ranlib-18.com"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/llvm-ranlib-18.exe"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/llvm-ranlib-18"
@@ -1927,6 +1976,9 @@ events:
       - "C:/Gradle/gradle-9.1.0/bin/llvm-ranlib18.com"
       - "C:/Gradle/gradle-9.1.0/bin/llvm-ranlib18.exe"
       - "C:/Gradle/gradle-9.1.0/bin/llvm-ranlib18"
+      - "C:/Program Files/Docker/Docker/resources/bin/llvm-ranlib18.com"
+      - "C:/Program Files/Docker/Docker/resources/bin/llvm-ranlib18.exe"
+      - "C:/Program Files/Docker/Docker/resources/bin/llvm-ranlib18"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/llvm-ranlib18.com"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/llvm-ranlib18.exe"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/llvm-ranlib18"
@@ -1993,6 +2045,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:\\Gradle\\gradle-9.1.0\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
         - "C:\\Users\\miguel\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
         - "C:\\Users\\miguel\\AppData\\Local\\Programs\\Python\\Python313\\"
         - "C:\\Users\\miguel\\AppData\\Local\\Programs\\Python\\Launcher\\"
@@ -2047,6 +2100,7 @@ events:
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Gradle/gradle-9.1.0/bin/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Launcher/"
@@ -2112,6 +2166,9 @@ events:
       - "C:/Gradle/gradle-9.1.0/bin/clang-scan-deps-18.0.com"
       - "C:/Gradle/gradle-9.1.0/bin/clang-scan-deps-18.0.exe"
       - "C:/Gradle/gradle-9.1.0/bin/clang-scan-deps-18.0"
+      - "C:/Program Files/Docker/Docker/resources/bin/clang-scan-deps-18.0.com"
+      - "C:/Program Files/Docker/Docker/resources/bin/clang-scan-deps-18.0.exe"
+      - "C:/Program Files/Docker/Docker/resources/bin/clang-scan-deps-18.0"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/clang-scan-deps-18.0.com"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/clang-scan-deps-18.0.exe"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/clang-scan-deps-18.0"
@@ -2202,6 +2259,9 @@ events:
       - "C:/Gradle/gradle-9.1.0/bin/clang-scan-deps-18.com"
       - "C:/Gradle/gradle-9.1.0/bin/clang-scan-deps-18.exe"
       - "C:/Gradle/gradle-9.1.0/bin/clang-scan-deps-18"
+      - "C:/Program Files/Docker/Docker/resources/bin/clang-scan-deps-18.com"
+      - "C:/Program Files/Docker/Docker/resources/bin/clang-scan-deps-18.exe"
+      - "C:/Program Files/Docker/Docker/resources/bin/clang-scan-deps-18"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/clang-scan-deps-18.com"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/clang-scan-deps-18.exe"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/clang-scan-deps-18"
@@ -2292,6 +2352,9 @@ events:
       - "C:/Gradle/gradle-9.1.0/bin/clang-scan-deps18.com"
       - "C:/Gradle/gradle-9.1.0/bin/clang-scan-deps18.exe"
       - "C:/Gradle/gradle-9.1.0/bin/clang-scan-deps18"
+      - "C:/Program Files/Docker/Docker/resources/bin/clang-scan-deps18.com"
+      - "C:/Program Files/Docker/Docker/resources/bin/clang-scan-deps18.exe"
+      - "C:/Program Files/Docker/Docker/resources/bin/clang-scan-deps18"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/clang-scan-deps18.com"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/clang-scan-deps18.exe"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/clang-scan-deps18"
@@ -2358,6 +2421,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:\\Gradle\\gradle-9.1.0\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
         - "C:\\Users\\miguel\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
         - "C:\\Users\\miguel\\AppData\\Local\\Programs\\Python\\Python313\\"
         - "C:\\Users\\miguel\\AppData\\Local\\Programs\\Python\\Launcher\\"
@@ -2422,6 +2486,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:\\Gradle\\gradle-9.1.0\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
         - "C:\\Users\\miguel\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
         - "C:\\Users\\miguel\\AppData\\Local\\Programs\\Python\\Python313\\"
         - "C:\\Users\\miguel\\AppData\\Local\\Programs\\Python\\Launcher\\"
@@ -2498,6 +2563,7 @@ events:
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Gradle/gradle-9.1.0/bin/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Launcher/"
@@ -2563,6 +2629,9 @@ events:
       - "C:/Gradle/gradle-9.1.0/bin/llvm-ar-18.0.com"
       - "C:/Gradle/gradle-9.1.0/bin/llvm-ar-18.0.exe"
       - "C:/Gradle/gradle-9.1.0/bin/llvm-ar-18.0"
+      - "C:/Program Files/Docker/Docker/resources/bin/llvm-ar-18.0.com"
+      - "C:/Program Files/Docker/Docker/resources/bin/llvm-ar-18.0.exe"
+      - "C:/Program Files/Docker/Docker/resources/bin/llvm-ar-18.0"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/llvm-ar-18.0.com"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/llvm-ar-18.0.exe"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/llvm-ar-18.0"
@@ -2653,6 +2722,9 @@ events:
       - "C:/Gradle/gradle-9.1.0/bin/llvm-ar-18.com"
       - "C:/Gradle/gradle-9.1.0/bin/llvm-ar-18.exe"
       - "C:/Gradle/gradle-9.1.0/bin/llvm-ar-18"
+      - "C:/Program Files/Docker/Docker/resources/bin/llvm-ar-18.com"
+      - "C:/Program Files/Docker/Docker/resources/bin/llvm-ar-18.exe"
+      - "C:/Program Files/Docker/Docker/resources/bin/llvm-ar-18"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/llvm-ar-18.com"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/llvm-ar-18.exe"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/llvm-ar-18"
@@ -2743,6 +2815,9 @@ events:
       - "C:/Gradle/gradle-9.1.0/bin/llvm-ar18.com"
       - "C:/Gradle/gradle-9.1.0/bin/llvm-ar18.exe"
       - "C:/Gradle/gradle-9.1.0/bin/llvm-ar18"
+      - "C:/Program Files/Docker/Docker/resources/bin/llvm-ar18.com"
+      - "C:/Program Files/Docker/Docker/resources/bin/llvm-ar18.exe"
+      - "C:/Program Files/Docker/Docker/resources/bin/llvm-ar18"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/llvm-ar18.com"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/llvm-ar18.exe"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/llvm-ar18"
@@ -2809,6 +2884,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:\\Gradle\\gradle-9.1.0\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
         - "C:\\Users\\miguel\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
         - "C:\\Users\\miguel\\AppData\\Local\\Programs\\Python\\Python313\\"
         - "C:\\Users\\miguel\\AppData\\Local\\Programs\\Python\\Launcher\\"
@@ -2863,6 +2939,7 @@ events:
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Gradle/gradle-9.1.0/bin/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Launcher/"
@@ -2928,6 +3005,9 @@ events:
       - "C:/Gradle/gradle-9.1.0/bin/llvm-ranlib-18.0.com"
       - "C:/Gradle/gradle-9.1.0/bin/llvm-ranlib-18.0.exe"
       - "C:/Gradle/gradle-9.1.0/bin/llvm-ranlib-18.0"
+      - "C:/Program Files/Docker/Docker/resources/bin/llvm-ranlib-18.0.com"
+      - "C:/Program Files/Docker/Docker/resources/bin/llvm-ranlib-18.0.exe"
+      - "C:/Program Files/Docker/Docker/resources/bin/llvm-ranlib-18.0"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/llvm-ranlib-18.0.com"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/llvm-ranlib-18.0.exe"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/llvm-ranlib-18.0"
@@ -3018,6 +3098,9 @@ events:
       - "C:/Gradle/gradle-9.1.0/bin/llvm-ranlib-18.com"
       - "C:/Gradle/gradle-9.1.0/bin/llvm-ranlib-18.exe"
       - "C:/Gradle/gradle-9.1.0/bin/llvm-ranlib-18"
+      - "C:/Program Files/Docker/Docker/resources/bin/llvm-ranlib-18.com"
+      - "C:/Program Files/Docker/Docker/resources/bin/llvm-ranlib-18.exe"
+      - "C:/Program Files/Docker/Docker/resources/bin/llvm-ranlib-18"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/llvm-ranlib-18.com"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/llvm-ranlib-18.exe"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/llvm-ranlib-18"
@@ -3108,6 +3191,9 @@ events:
       - "C:/Gradle/gradle-9.1.0/bin/llvm-ranlib18.com"
       - "C:/Gradle/gradle-9.1.0/bin/llvm-ranlib18.exe"
       - "C:/Gradle/gradle-9.1.0/bin/llvm-ranlib18"
+      - "C:/Program Files/Docker/Docker/resources/bin/llvm-ranlib18.com"
+      - "C:/Program Files/Docker/Docker/resources/bin/llvm-ranlib18.exe"
+      - "C:/Program Files/Docker/Docker/resources/bin/llvm-ranlib18"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/llvm-ranlib18.com"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/llvm-ranlib18.exe"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/llvm-ranlib18"
@@ -3174,6 +3260,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:\\Gradle\\gradle-9.1.0\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
         - "C:\\Users\\miguel\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
         - "C:\\Users\\miguel\\AppData\\Local\\Programs\\Python\\Python313\\"
         - "C:\\Users\\miguel\\AppData\\Local\\Programs\\Python\\Launcher\\"
@@ -3228,6 +3315,7 @@ events:
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Gradle/gradle-9.1.0/bin/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Launcher/"
@@ -3293,6 +3381,9 @@ events:
       - "C:/Gradle/gradle-9.1.0/bin/clang-scan-deps-18.0.com"
       - "C:/Gradle/gradle-9.1.0/bin/clang-scan-deps-18.0.exe"
       - "C:/Gradle/gradle-9.1.0/bin/clang-scan-deps-18.0"
+      - "C:/Program Files/Docker/Docker/resources/bin/clang-scan-deps-18.0.com"
+      - "C:/Program Files/Docker/Docker/resources/bin/clang-scan-deps-18.0.exe"
+      - "C:/Program Files/Docker/Docker/resources/bin/clang-scan-deps-18.0"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/clang-scan-deps-18.0.com"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/clang-scan-deps-18.0.exe"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/clang-scan-deps-18.0"
@@ -3383,6 +3474,9 @@ events:
       - "C:/Gradle/gradle-9.1.0/bin/clang-scan-deps-18.com"
       - "C:/Gradle/gradle-9.1.0/bin/clang-scan-deps-18.exe"
       - "C:/Gradle/gradle-9.1.0/bin/clang-scan-deps-18"
+      - "C:/Program Files/Docker/Docker/resources/bin/clang-scan-deps-18.com"
+      - "C:/Program Files/Docker/Docker/resources/bin/clang-scan-deps-18.exe"
+      - "C:/Program Files/Docker/Docker/resources/bin/clang-scan-deps-18"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/clang-scan-deps-18.com"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/clang-scan-deps-18.exe"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/clang-scan-deps-18"
@@ -3473,6 +3567,9 @@ events:
       - "C:/Gradle/gradle-9.1.0/bin/clang-scan-deps18.com"
       - "C:/Gradle/gradle-9.1.0/bin/clang-scan-deps18.exe"
       - "C:/Gradle/gradle-9.1.0/bin/clang-scan-deps18"
+      - "C:/Program Files/Docker/Docker/resources/bin/clang-scan-deps18.com"
+      - "C:/Program Files/Docker/Docker/resources/bin/clang-scan-deps18.exe"
+      - "C:/Program Files/Docker/Docker/resources/bin/clang-scan-deps18"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/clang-scan-deps18.com"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/clang-scan-deps18.exe"
       - "C:/Users/miguel/AppData/Local/Programs/Python/Python313/Scripts/clang-scan-deps18"
@@ -3539,6 +3636,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:\\Gradle\\gradle-9.1.0\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
         - "C:\\Users\\miguel\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
         - "C:\\Users\\miguel\\AppData\\Local\\Programs\\Python\\Python313\\"
         - "C:\\Users\\miguel\\AppData\\Local\\Programs\\Python\\Launcher\\"
@@ -3562,8 +3660,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/miguel/AndroidStudioProjects/AARv2Lector/cpp/build-arm64/CMakeFiles/CMakeScratch/TryCompile-kg9kgb"
-      binary: "C:/Users/miguel/AndroidStudioProjects/AARv2Lector/cpp/build-arm64/CMakeFiles/CMakeScratch/TryCompile-kg9kgb"
+      source: "C:/Users/miguel/AndroidStudioProjects/AARv2Lector/cpp/build-arm64/CMakeFiles/CMakeScratch/TryCompile-tdvsv7"
+      binary: "C:/Users/miguel/AndroidStudioProjects/AARv2Lector/cpp/build-arm64/CMakeFiles/CMakeScratch/TryCompile-tdvsv7"
     cmakeVariables:
       ANDROID_ABI: "arm64-v8a"
       ANDROID_ARM_MODE: "thumb"
@@ -3584,16 +3682,16 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/miguel/AndroidStudioProjects/AARv2Lector/cpp/build-arm64/CMakeFiles/CMakeScratch/TryCompile-kg9kgb'
+        Change Dir: 'C:/Users/miguel/AndroidStudioProjects/AARv2Lector/cpp/build-arm64/CMakeFiles/CMakeScratch/TryCompile-tdvsv7'
         
-        Run Build Command(s): C:/Users/miguel/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.exe -v cmTC_030c1
-        [1/2] C:\\PROGRA~1\\Unity\\Hub\\Editor\\60002~1.5F1\\Editor\\Data\\PLAYBA~1\\ANDROI~1\\NDK\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\bin\\clang.exe --target=aarch64-none-linux-android24 --sysroot="C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot"   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat   -fPIE   -v -MD -MT CMakeFiles/cmTC_030c1.dir/CMakeCCompilerABI.c.o -MF CMakeFiles\\cmTC_030c1.dir\\CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_030c1.dir/CMakeCCompilerABI.c.o -c "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeCCompilerABI.c"
+        Run Build Command(s): C:/Users/miguel/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.exe -v cmTC_4942e
+        [1/2] C:\\PROGRA~1\\Unity\\Hub\\Editor\\60002~1.5F1\\Editor\\Data\\PLAYBA~1\\ANDROI~1\\NDK\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\bin\\clang.exe --target=aarch64-none-linux-android24 --sysroot="C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot"   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat   -fPIE   -v -MD -MT CMakeFiles/cmTC_4942e.dir/CMakeCCompilerABI.c.o -MF CMakeFiles\\cmTC_4942e.dir\\CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_4942e.dir/CMakeCCompilerABI.c.o -c "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeCCompilerABI.c"
         Android (12470979, based on r522817c) clang version 18.0.3 (https://android.googlesource.com/toolchain/llvm-project d8003a456d14a3deb8054cdaa529ffbf02d9b262)
         Target: aarch64-none-linux-android24
         Thread model: posix
         InstalledDir: C:/PROGRA~1/Unity/Hub/Editor/60002~1.5F1/Editor/Data/PLAYBA~1/ANDROI~1/NDK/TOOLCH~1/llvm/prebuilt/WINDOW~1/bin
          (in-process)
-         "C:\\\\PROGRA~1\\\\Unity\\\\Hub\\\\Editor\\\\60002~1.5F1\\\\Editor\\\\Data\\\\PLAYBA~1\\\\ANDROI~1\\\\NDK\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1\\\\bin\\\\clang.exe" -cc1 -triple aarch64-none-linux-android24 -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu generic -target-feature +neon -target-feature +v8a -target-feature +fix-cortex-a53-835769 -target-abi aapcs -debug-info-kind=constructor -dwarf-version=4 -debugger-tuning=gdb -fdebug-compilation-dir=C:/Users/miguel/AndroidStudioProjects/AARv2Lector/cpp/build-arm64/CMakeFiles/CMakeScratch/TryCompile-kg9kgb -v -ffunction-sections -fdata-sections -fcoverage-compilation-dir=C:/Users/miguel/AndroidStudioProjects/AARv2Lector/cpp/build-arm64/CMakeFiles/CMakeScratch/TryCompile-kg9kgb -resource-dir "C:\\\\PROGRA~1\\\\Unity\\\\Hub\\\\Editor\\\\60002~1.5F1\\\\Editor\\\\Data\\\\PLAYBA~1\\\\ANDROI~1\\\\NDK\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1/lib/clang/18" -dependency-file "CMakeFiles\\\\cmTC_030c1.dir\\\\CMakeCCompilerABI.c.o.d" -MT CMakeFiles/cmTC_030c1.dir/CMakeCCompilerABI.c.o -sys-header-deps -D ANDROID -D _FORTIFY_SOURCE=2 -isysroot "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot" -internal-isystem "C:\\\\PROGRA~1\\\\Unity\\\\Hub\\\\Editor\\\\60002~1.5F1\\\\Editor\\\\Data\\\\PLAYBA~1\\\\ANDROI~1\\\\NDK\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1/lib/clang/18/include" -internal-isystem "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/local/include" -internal-externc-isystem "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/aarch64-linux-android" -internal-externc-isystem "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/include" -internal-externc-isystem "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include" -Wformat -ferror-limit 19 -femulated-tls -stack-protector 2 -fno-signed-char -fgnuc-version=4.2.1 -target-feature +outline-atomics -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_030c1.dir/CMakeCCompilerABI.c.o -x c "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeCCompilerABI.c"
+         "C:\\\\PROGRA~1\\\\Unity\\\\Hub\\\\Editor\\\\60002~1.5F1\\\\Editor\\\\Data\\\\PLAYBA~1\\\\ANDROI~1\\\\NDK\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1\\\\bin\\\\clang.exe" -cc1 -triple aarch64-none-linux-android24 -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu generic -target-feature +neon -target-feature +v8a -target-feature +fix-cortex-a53-835769 -target-abi aapcs -debug-info-kind=constructor -dwarf-version=4 -debugger-tuning=gdb -fdebug-compilation-dir=C:/Users/miguel/AndroidStudioProjects/AARv2Lector/cpp/build-arm64/CMakeFiles/CMakeScratch/TryCompile-tdvsv7 -v -ffunction-sections -fdata-sections -fcoverage-compilation-dir=C:/Users/miguel/AndroidStudioProjects/AARv2Lector/cpp/build-arm64/CMakeFiles/CMakeScratch/TryCompile-tdvsv7 -resource-dir "C:\\\\PROGRA~1\\\\Unity\\\\Hub\\\\Editor\\\\60002~1.5F1\\\\Editor\\\\Data\\\\PLAYBA~1\\\\ANDROI~1\\\\NDK\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1/lib/clang/18" -dependency-file "CMakeFiles\\\\cmTC_4942e.dir\\\\CMakeCCompilerABI.c.o.d" -MT CMakeFiles/cmTC_4942e.dir/CMakeCCompilerABI.c.o -sys-header-deps -D ANDROID -D _FORTIFY_SOURCE=2 -isysroot "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot" -internal-isystem "C:\\\\PROGRA~1\\\\Unity\\\\Hub\\\\Editor\\\\60002~1.5F1\\\\Editor\\\\Data\\\\PLAYBA~1\\\\ANDROI~1\\\\NDK\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1/lib/clang/18/include" -internal-isystem "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/local/include" -internal-externc-isystem "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/aarch64-linux-android" -internal-externc-isystem "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/include" -internal-externc-isystem "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include" -Wformat -ferror-limit 19 -femulated-tls -stack-protector 2 -fno-signed-char -fgnuc-version=4.2.1 -target-feature +outline-atomics -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_4942e.dir/CMakeCCompilerABI.c.o -x c "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeCCompilerABI.c"
         clang -cc1 version 18.0.3 based upon LLVM 18.0.3 default target x86_64-w64-windows-gnu
         ignoring nonexistent directory "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/local/include"
         ignoring nonexistent directory "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/include"
@@ -3603,12 +3701,12 @@ events:
          C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/aarch64-linux-android
          C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include
         End of search list.
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\Unity\\Hub\\Editor\\60002~1.5F1\\Editor\\Data\\PLAYBA~1\\ANDROI~1\\NDK\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\bin\\clang.exe --target=aarch64-none-linux-android24 --sysroot="C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot" -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--no-undefined-version -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments   -v CMakeFiles/cmTC_030c1.dir/CMakeCCompilerABI.c.o -o cmTC_030c1   && cd ."
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\Unity\\Hub\\Editor\\60002~1.5F1\\Editor\\Data\\PLAYBA~1\\ANDROI~1\\NDK\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\bin\\clang.exe --target=aarch64-none-linux-android24 --sysroot="C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot" -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--no-undefined-version -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments   -v CMakeFiles/cmTC_4942e.dir/CMakeCCompilerABI.c.o -o cmTC_4942e   && cd ."
         Android (12470979, based on r522817c) clang version 18.0.3 (https://android.googlesource.com/toolchain/llvm-project d8003a456d14a3deb8054cdaa529ffbf02d9b262)
         Target: aarch64-none-linux-android24
         Thread model: posix
         InstalledDir: C:/PROGRA~1/Unity/Hub/Editor/60002~1.5F1/Editor/Data/PLAYBA~1/ANDROI~1/NDK/TOOLCH~1/llvm/prebuilt/WINDOW~1/bin
-         "C:/PROGRA~1/Unity/Hub/Editor/60002~1.5F1/Editor/Data/PLAYBA~1/ANDROI~1/NDK/TOOLCH~1/llvm/prebuilt/WINDOW~1/bin/ld.lld" "--sysroot=C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot" -EL --fix-cortex-a53-843419 -z now -z relro -z max-page-size=4096 --hash-style=gnu --eh-frame-hdr -m aarch64linux -pie -dynamic-linker /system/bin/linker64 -o cmTC_030c1 "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtbegin_dynamic.o" "-LC:\\\\PROGRA~1\\\\Unity\\\\Hub\\\\Editor\\\\60002~1.5F1\\\\Editor\\\\Data\\\\PLAYBA~1\\\\ANDROI~1\\\\NDK\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1/lib/clang/18/lib/linux/aarch64" "-LC:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/aarch64-linux-android/24" "-LC:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/aarch64-linux-android" "-LC:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib" --build-id=sha1 --no-rosegment --no-undefined-version --fatal-warnings --no-undefined CMakeFiles/cmTC_030c1.dir/CMakeCCompilerABI.c.o "C:\\\\PROGRA~1\\\\Unity\\\\Hub\\\\Editor\\\\60002~1.5F1\\\\Editor\\\\Data\\\\PLAYBA~1\\\\ANDROI~1\\\\NDK\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1/lib/clang/18/lib/linux/libclang_rt.builtins-aarch64-android.a" -l:libunwind.a -ldl -lc "C:\\\\PROGRA~1\\\\Unity\\\\Hub\\\\Editor\\\\60002~1.5F1\\\\Editor\\\\Data\\\\PLAYBA~1\\\\ANDROI~1\\\\NDK\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1/lib/clang/18/lib/linux/libclang_rt.builtins-aarch64-android.a" -l:libunwind.a -ldl "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtend_android.o"
+         "C:/PROGRA~1/Unity/Hub/Editor/60002~1.5F1/Editor/Data/PLAYBA~1/ANDROI~1/NDK/TOOLCH~1/llvm/prebuilt/WINDOW~1/bin/ld.lld" "--sysroot=C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot" -EL --fix-cortex-a53-843419 -z now -z relro -z max-page-size=4096 --hash-style=gnu --eh-frame-hdr -m aarch64linux -pie -dynamic-linker /system/bin/linker64 -o cmTC_4942e "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtbegin_dynamic.o" "-LC:\\\\PROGRA~1\\\\Unity\\\\Hub\\\\Editor\\\\60002~1.5F1\\\\Editor\\\\Data\\\\PLAYBA~1\\\\ANDROI~1\\\\NDK\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1/lib/clang/18/lib/linux/aarch64" "-LC:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/aarch64-linux-android/24" "-LC:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/aarch64-linux-android" "-LC:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib" --build-id=sha1 --no-rosegment --no-undefined-version --fatal-warnings --no-undefined CMakeFiles/cmTC_4942e.dir/CMakeCCompilerABI.c.o "C:\\\\PROGRA~1\\\\Unity\\\\Hub\\\\Editor\\\\60002~1.5F1\\\\Editor\\\\Data\\\\PLAYBA~1\\\\ANDROI~1\\\\NDK\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1/lib/clang/18/lib/linux/libclang_rt.builtins-aarch64-android.a" -l:libunwind.a -ldl -lc "C:\\\\PROGRA~1\\\\Unity\\\\Hub\\\\Editor\\\\60002~1.5F1\\\\Editor\\\\Data\\\\PLAYBA~1\\\\ANDROI~1\\\\NDK\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1/lib/clang/18/lib/linux/libclang_rt.builtins-aarch64-android.a" -l:libunwind.a -ldl "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtend_android.o"
         
       exitCode: 0
   -
@@ -3641,16 +3739,16 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: 'C:/Users/miguel/AndroidStudioProjects/AARv2Lector/cpp/build-arm64/CMakeFiles/CMakeScratch/TryCompile-kg9kgb']
+        ignore line: [Change Dir: 'C:/Users/miguel/AndroidStudioProjects/AARv2Lector/cpp/build-arm64/CMakeFiles/CMakeScratch/TryCompile-tdvsv7']
         ignore line: []
-        ignore line: [Run Build Command(s): C:/Users/miguel/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.exe -v cmTC_030c1]
-        ignore line: [[1/2] C:\\PROGRA~1\\Unity\\Hub\\Editor\\60002~1.5F1\\Editor\\Data\\PLAYBA~1\\ANDROI~1\\NDK\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\bin\\clang.exe --target=aarch64-none-linux-android24 --sysroot="C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot"   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat   -fPIE   -v -MD -MT CMakeFiles/cmTC_030c1.dir/CMakeCCompilerABI.c.o -MF CMakeFiles\\cmTC_030c1.dir\\CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_030c1.dir/CMakeCCompilerABI.c.o -c "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeCCompilerABI.c"]
+        ignore line: [Run Build Command(s): C:/Users/miguel/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.exe -v cmTC_4942e]
+        ignore line: [[1/2] C:\\PROGRA~1\\Unity\\Hub\\Editor\\60002~1.5F1\\Editor\\Data\\PLAYBA~1\\ANDROI~1\\NDK\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\bin\\clang.exe --target=aarch64-none-linux-android24 --sysroot="C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot"   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat   -fPIE   -v -MD -MT CMakeFiles/cmTC_4942e.dir/CMakeCCompilerABI.c.o -MF CMakeFiles\\cmTC_4942e.dir\\CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_4942e.dir/CMakeCCompilerABI.c.o -c "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeCCompilerABI.c"]
         ignore line: [Android (12470979  based on r522817c) clang version 18.0.3 (https://android.googlesource.com/toolchain/llvm-project d8003a456d14a3deb8054cdaa529ffbf02d9b262)]
         ignore line: [Target: aarch64-none-linux-android24]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: C:/PROGRA~1/Unity/Hub/Editor/60002~1.5F1/Editor/Data/PLAYBA~1/ANDROI~1/NDK/TOOLCH~1/llvm/prebuilt/WINDOW~1/bin]
         ignore line: [ (in-process)]
-        ignore line: [ "C:\\\\PROGRA~1\\\\Unity\\\\Hub\\\\Editor\\\\60002~1.5F1\\\\Editor\\\\Data\\\\PLAYBA~1\\\\ANDROI~1\\\\NDK\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1\\\\bin\\\\clang.exe" -cc1 -triple aarch64-none-linux-android24 -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu generic -target-feature +neon -target-feature +v8a -target-feature +fix-cortex-a53-835769 -target-abi aapcs -debug-info-kind=constructor -dwarf-version=4 -debugger-tuning=gdb -fdebug-compilation-dir=C:/Users/miguel/AndroidStudioProjects/AARv2Lector/cpp/build-arm64/CMakeFiles/CMakeScratch/TryCompile-kg9kgb -v -ffunction-sections -fdata-sections -fcoverage-compilation-dir=C:/Users/miguel/AndroidStudioProjects/AARv2Lector/cpp/build-arm64/CMakeFiles/CMakeScratch/TryCompile-kg9kgb -resource-dir "C:\\\\PROGRA~1\\\\Unity\\\\Hub\\\\Editor\\\\60002~1.5F1\\\\Editor\\\\Data\\\\PLAYBA~1\\\\ANDROI~1\\\\NDK\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1/lib/clang/18" -dependency-file "CMakeFiles\\\\cmTC_030c1.dir\\\\CMakeCCompilerABI.c.o.d" -MT CMakeFiles/cmTC_030c1.dir/CMakeCCompilerABI.c.o -sys-header-deps -D ANDROID -D _FORTIFY_SOURCE=2 -isysroot "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot" -internal-isystem "C:\\\\PROGRA~1\\\\Unity\\\\Hub\\\\Editor\\\\60002~1.5F1\\\\Editor\\\\Data\\\\PLAYBA~1\\\\ANDROI~1\\\\NDK\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1/lib/clang/18/include" -internal-isystem "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/local/include" -internal-externc-isystem "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/aarch64-linux-android" -internal-externc-isystem "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/include" -internal-externc-isystem "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include" -Wformat -ferror-limit 19 -femulated-tls -stack-protector 2 -fno-signed-char -fgnuc-version=4.2.1 -target-feature +outline-atomics -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_030c1.dir/CMakeCCompilerABI.c.o -x c "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeCCompilerABI.c"]
+        ignore line: [ "C:\\\\PROGRA~1\\\\Unity\\\\Hub\\\\Editor\\\\60002~1.5F1\\\\Editor\\\\Data\\\\PLAYBA~1\\\\ANDROI~1\\\\NDK\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1\\\\bin\\\\clang.exe" -cc1 -triple aarch64-none-linux-android24 -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu generic -target-feature +neon -target-feature +v8a -target-feature +fix-cortex-a53-835769 -target-abi aapcs -debug-info-kind=constructor -dwarf-version=4 -debugger-tuning=gdb -fdebug-compilation-dir=C:/Users/miguel/AndroidStudioProjects/AARv2Lector/cpp/build-arm64/CMakeFiles/CMakeScratch/TryCompile-tdvsv7 -v -ffunction-sections -fdata-sections -fcoverage-compilation-dir=C:/Users/miguel/AndroidStudioProjects/AARv2Lector/cpp/build-arm64/CMakeFiles/CMakeScratch/TryCompile-tdvsv7 -resource-dir "C:\\\\PROGRA~1\\\\Unity\\\\Hub\\\\Editor\\\\60002~1.5F1\\\\Editor\\\\Data\\\\PLAYBA~1\\\\ANDROI~1\\\\NDK\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1/lib/clang/18" -dependency-file "CMakeFiles\\\\cmTC_4942e.dir\\\\CMakeCCompilerABI.c.o.d" -MT CMakeFiles/cmTC_4942e.dir/CMakeCCompilerABI.c.o -sys-header-deps -D ANDROID -D _FORTIFY_SOURCE=2 -isysroot "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot" -internal-isystem "C:\\\\PROGRA~1\\\\Unity\\\\Hub\\\\Editor\\\\60002~1.5F1\\\\Editor\\\\Data\\\\PLAYBA~1\\\\ANDROI~1\\\\NDK\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1/lib/clang/18/include" -internal-isystem "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/local/include" -internal-externc-isystem "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/aarch64-linux-android" -internal-externc-isystem "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/include" -internal-externc-isystem "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include" -Wformat -ferror-limit 19 -femulated-tls -stack-protector 2 -fno-signed-char -fgnuc-version=4.2.1 -target-feature +outline-atomics -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_4942e.dir/CMakeCCompilerABI.c.o -x c "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeCCompilerABI.c"]
         ignore line: [clang -cc1 version 18.0.3 based upon LLVM 18.0.3 default target x86_64-w64-windows-gnu]
         ignore line: [ignoring nonexistent directory "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/local/include"]
         ignore line: [ignoring nonexistent directory "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/include"]
@@ -3660,12 +3758,12 @@ events:
         ignore line: [ C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/aarch64-linux-android]
         ignore line: [ C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include]
         ignore line: [End of search list.]
-        ignore line: [[2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\Unity\\Hub\\Editor\\60002~1.5F1\\Editor\\Data\\PLAYBA~1\\ANDROI~1\\NDK\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\bin\\clang.exe --target=aarch64-none-linux-android24 --sysroot="C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot" -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -static-libstdc++ -Wl --build-id=sha1 -Wl --no-rosegment -Wl --no-undefined-version -Wl --fatal-warnings -Wl --no-undefined -Qunused-arguments   -v CMakeFiles/cmTC_030c1.dir/CMakeCCompilerABI.c.o -o cmTC_030c1   && cd ."]
+        ignore line: [[2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\Unity\\Hub\\Editor\\60002~1.5F1\\Editor\\Data\\PLAYBA~1\\ANDROI~1\\NDK\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\bin\\clang.exe --target=aarch64-none-linux-android24 --sysroot="C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot" -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -static-libstdc++ -Wl --build-id=sha1 -Wl --no-rosegment -Wl --no-undefined-version -Wl --fatal-warnings -Wl --no-undefined -Qunused-arguments   -v CMakeFiles/cmTC_4942e.dir/CMakeCCompilerABI.c.o -o cmTC_4942e   && cd ."]
         ignore line: [Android (12470979  based on r522817c) clang version 18.0.3 (https://android.googlesource.com/toolchain/llvm-project d8003a456d14a3deb8054cdaa529ffbf02d9b262)]
         ignore line: [Target: aarch64-none-linux-android24]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: C:/PROGRA~1/Unity/Hub/Editor/60002~1.5F1/Editor/Data/PLAYBA~1/ANDROI~1/NDK/TOOLCH~1/llvm/prebuilt/WINDOW~1/bin]
-        link line: [ "C:/PROGRA~1/Unity/Hub/Editor/60002~1.5F1/Editor/Data/PLAYBA~1/ANDROI~1/NDK/TOOLCH~1/llvm/prebuilt/WINDOW~1/bin/ld.lld" "--sysroot=C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot" -EL --fix-cortex-a53-843419 -z now -z relro -z max-page-size=4096 --hash-style=gnu --eh-frame-hdr -m aarch64linux -pie -dynamic-linker /system/bin/linker64 -o cmTC_030c1 "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtbegin_dynamic.o" "-LC:\\\\PROGRA~1\\\\Unity\\\\Hub\\\\Editor\\\\60002~1.5F1\\\\Editor\\\\Data\\\\PLAYBA~1\\\\ANDROI~1\\\\NDK\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1/lib/clang/18/lib/linux/aarch64" "-LC:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/aarch64-linux-android/24" "-LC:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/aarch64-linux-android" "-LC:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib" --build-id=sha1 --no-rosegment --no-undefined-version --fatal-warnings --no-undefined CMakeFiles/cmTC_030c1.dir/CMakeCCompilerABI.c.o "C:\\\\PROGRA~1\\\\Unity\\\\Hub\\\\Editor\\\\60002~1.5F1\\\\Editor\\\\Data\\\\PLAYBA~1\\\\ANDROI~1\\\\NDK\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1/lib/clang/18/lib/linux/libclang_rt.builtins-aarch64-android.a" -l:libunwind.a -ldl -lc "C:\\\\PROGRA~1\\\\Unity\\\\Hub\\\\Editor\\\\60002~1.5F1\\\\Editor\\\\Data\\\\PLAYBA~1\\\\ANDROI~1\\\\NDK\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1/lib/clang/18/lib/linux/libclang_rt.builtins-aarch64-android.a" -l:libunwind.a -ldl "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtend_android.o"]
+        link line: [ "C:/PROGRA~1/Unity/Hub/Editor/60002~1.5F1/Editor/Data/PLAYBA~1/ANDROI~1/NDK/TOOLCH~1/llvm/prebuilt/WINDOW~1/bin/ld.lld" "--sysroot=C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot" -EL --fix-cortex-a53-843419 -z now -z relro -z max-page-size=4096 --hash-style=gnu --eh-frame-hdr -m aarch64linux -pie -dynamic-linker /system/bin/linker64 -o cmTC_4942e "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtbegin_dynamic.o" "-LC:\\\\PROGRA~1\\\\Unity\\\\Hub\\\\Editor\\\\60002~1.5F1\\\\Editor\\\\Data\\\\PLAYBA~1\\\\ANDROI~1\\\\NDK\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1/lib/clang/18/lib/linux/aarch64" "-LC:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/aarch64-linux-android/24" "-LC:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/aarch64-linux-android" "-LC:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib" --build-id=sha1 --no-rosegment --no-undefined-version --fatal-warnings --no-undefined CMakeFiles/cmTC_4942e.dir/CMakeCCompilerABI.c.o "C:\\\\PROGRA~1\\\\Unity\\\\Hub\\\\Editor\\\\60002~1.5F1\\\\Editor\\\\Data\\\\PLAYBA~1\\\\ANDROI~1\\\\NDK\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1/lib/clang/18/lib/linux/libclang_rt.builtins-aarch64-android.a" -l:libunwind.a -ldl -lc "C:\\\\PROGRA~1\\\\Unity\\\\Hub\\\\Editor\\\\60002~1.5F1\\\\Editor\\\\Data\\\\PLAYBA~1\\\\ANDROI~1\\\\NDK\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1/lib/clang/18/lib/linux/libclang_rt.builtins-aarch64-android.a" -l:libunwind.a -ldl "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtend_android.o"]
           arg [C:/PROGRA~1/Unity/Hub/Editor/60002~1.5F1/Editor/Data/PLAYBA~1/ANDROI~1/NDK/TOOLCH~1/llvm/prebuilt/WINDOW~1/bin/ld.lld] ==> ignore
           arg [--sysroot=C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot] ==> ignore
           arg [-EL] ==> ignore
@@ -3681,7 +3779,7 @@ events:
           arg [-dynamic-linker] ==> ignore
           arg [/system/bin/linker64] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_030c1] ==> ignore
+          arg [cmTC_4942e] ==> ignore
           arg [C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtbegin_dynamic.o] ==> obj [C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtbegin_dynamic.o]
           arg [-LC:\\\\PROGRA~1\\\\Unity\\\\Hub\\\\Editor\\\\60002~1.5F1\\\\Editor\\\\Data\\\\PLAYBA~1\\\\ANDROI~1\\\\NDK\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1/lib/clang/18/lib/linux/aarch64] ==> dir [C:\\\\PROGRA~1\\\\Unity\\\\Hub\\\\Editor\\\\60002~1.5F1\\\\Editor\\\\Data\\\\PLAYBA~1\\\\ANDROI~1\\\\NDK\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1/lib/clang/18/lib/linux/aarch64]
           arg [-LC:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/aarch64-linux-android/24] ==> dir [C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/aarch64-linux-android/24]
@@ -3692,7 +3790,7 @@ events:
           arg [--no-undefined-version] ==> ignore
           arg [--fatal-warnings] ==> ignore
           arg [--no-undefined] ==> ignore
-          arg [CMakeFiles/cmTC_030c1.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [CMakeFiles/cmTC_4942e.dir/CMakeCCompilerABI.c.o] ==> ignore
           arg [C:\\\\PROGRA~1\\\\Unity\\\\Hub\\\\Editor\\\\60002~1.5F1\\\\Editor\\\\Data\\\\PLAYBA~1\\\\ANDROI~1\\\\NDK\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1/lib/clang/18/lib/linux/libclang_rt.builtins-aarch64-android.a] ==> lib [C:\\\\PROGRA~1\\\\Unity\\\\Hub\\\\Editor\\\\60002~1.5F1\\\\Editor\\\\Data\\\\PLAYBA~1\\\\ANDROI~1\\\\NDK\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1/lib/clang/18/lib/linux/libclang_rt.builtins-aarch64-android.a]
           arg [-l:libunwind.a] ==> lib [-l:libunwind.a]
           arg [-ldl] ==> lib [dl]
@@ -3733,8 +3831,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/miguel/AndroidStudioProjects/AARv2Lector/cpp/build-arm64/CMakeFiles/CMakeScratch/TryCompile-b236ct"
-      binary: "C:/Users/miguel/AndroidStudioProjects/AARv2Lector/cpp/build-arm64/CMakeFiles/CMakeScratch/TryCompile-b236ct"
+      source: "C:/Users/miguel/AndroidStudioProjects/AARv2Lector/cpp/build-arm64/CMakeFiles/CMakeScratch/TryCompile-4v4aqt"
+      binary: "C:/Users/miguel/AndroidStudioProjects/AARv2Lector/cpp/build-arm64/CMakeFiles/CMakeScratch/TryCompile-4v4aqt"
     cmakeVariables:
       ANDROID_ABI: "arm64-v8a"
       ANDROID_ARM_MODE: "thumb"
@@ -3756,16 +3854,16 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/miguel/AndroidStudioProjects/AARv2Lector/cpp/build-arm64/CMakeFiles/CMakeScratch/TryCompile-b236ct'
+        Change Dir: 'C:/Users/miguel/AndroidStudioProjects/AARv2Lector/cpp/build-arm64/CMakeFiles/CMakeScratch/TryCompile-4v4aqt'
         
-        Run Build Command(s): C:/Users/miguel/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.exe -v cmTC_db022
-        [1/2] C:\\PROGRA~1\\Unity\\Hub\\Editor\\60002~1.5F1\\Editor\\Data\\PLAYBA~1\\ANDROI~1\\NDK\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\bin\\CLANG_~1.EXE --target=aarch64-none-linux-android24 --sysroot="C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot"   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat    -fPIE   -v -MD -MT CMakeFiles/cmTC_db022.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles\\cmTC_db022.dir\\CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_db022.dir/CMakeCXXCompilerABI.cpp.o -c "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeCXXCompilerABI.cpp"
+        Run Build Command(s): C:/Users/miguel/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.exe -v cmTC_96ff8
+        [1/2] C:\\PROGRA~1\\Unity\\Hub\\Editor\\60002~1.5F1\\Editor\\Data\\PLAYBA~1\\ANDROI~1\\NDK\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\bin\\CLANG_~1.EXE --target=aarch64-none-linux-android24 --sysroot="C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot"   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat    -fPIE   -v -MD -MT CMakeFiles/cmTC_96ff8.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles\\cmTC_96ff8.dir\\CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_96ff8.dir/CMakeCXXCompilerABI.cpp.o -c "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeCXXCompilerABI.cpp"
         Android (12470979, based on r522817c) clang version 18.0.3 (https://android.googlesource.com/toolchain/llvm-project d8003a456d14a3deb8054cdaa529ffbf02d9b262)
         Target: aarch64-none-linux-android24
         Thread model: posix
         InstalledDir: C:/PROGRA~1/Unity/Hub/Editor/60002~1.5F1/Editor/Data/PLAYBA~1/ANDROI~1/NDK/TOOLCH~1/llvm/prebuilt/WINDOW~1/bin
          (in-process)
-         "C:\\\\PROGRA~1\\\\Unity\\\\Hub\\\\Editor\\\\60002~1.5F1\\\\Editor\\\\Data\\\\PLAYBA~1\\\\ANDROI~1\\\\NDK\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1\\\\bin\\\\CLANG_~1.EXE" -cc1 -triple aarch64-none-linux-android24 -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu generic -target-feature +neon -target-feature +v8a -target-feature +fix-cortex-a53-835769 -target-abi aapcs -debug-info-kind=constructor -dwarf-version=4 -debugger-tuning=gdb -fdebug-compilation-dir=C:/Users/miguel/AndroidStudioProjects/AARv2Lector/cpp/build-arm64/CMakeFiles/CMakeScratch/TryCompile-b236ct -v -ffunction-sections -fdata-sections -fcoverage-compilation-dir=C:/Users/miguel/AndroidStudioProjects/AARv2Lector/cpp/build-arm64/CMakeFiles/CMakeScratch/TryCompile-b236ct -resource-dir "C:\\\\PROGRA~1\\\\Unity\\\\Hub\\\\Editor\\\\60002~1.5F1\\\\Editor\\\\Data\\\\PLAYBA~1\\\\ANDROI~1\\\\NDK\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1/lib/clang/18" -dependency-file "CMakeFiles\\\\cmTC_db022.dir\\\\CMakeCXXCompilerABI.cpp.o.d" -MT CMakeFiles/cmTC_db022.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -D ANDROID -D _FORTIFY_SOURCE=2 -isysroot "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot" -internal-isystem "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1" -internal-isystem "C:\\\\PROGRA~1\\\\Unity\\\\Hub\\\\Editor\\\\60002~1.5F1\\\\Editor\\\\Data\\\\PLAYBA~1\\\\ANDROI~1\\\\NDK\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1/lib/clang/18/include" -internal-isystem "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/local/include" -internal-externc-isystem "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/aarch64-linux-android" -internal-externc-isystem "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/include" -internal-externc-isystem "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include" -Wformat -fdeprecated-macro -ferror-limit 19 -femulated-tls -stack-protector 2 -fno-signed-char -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -target-feature +outline-atomics -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_db022.dir/CMakeCXXCompilerABI.cpp.o -x c++ "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeCXXCompilerABI.cpp"
+         "C:\\\\PROGRA~1\\\\Unity\\\\Hub\\\\Editor\\\\60002~1.5F1\\\\Editor\\\\Data\\\\PLAYBA~1\\\\ANDROI~1\\\\NDK\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1\\\\bin\\\\CLANG_~1.EXE" -cc1 -triple aarch64-none-linux-android24 -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu generic -target-feature +neon -target-feature +v8a -target-feature +fix-cortex-a53-835769 -target-abi aapcs -debug-info-kind=constructor -dwarf-version=4 -debugger-tuning=gdb -fdebug-compilation-dir=C:/Users/miguel/AndroidStudioProjects/AARv2Lector/cpp/build-arm64/CMakeFiles/CMakeScratch/TryCompile-4v4aqt -v -ffunction-sections -fdata-sections -fcoverage-compilation-dir=C:/Users/miguel/AndroidStudioProjects/AARv2Lector/cpp/build-arm64/CMakeFiles/CMakeScratch/TryCompile-4v4aqt -resource-dir "C:\\\\PROGRA~1\\\\Unity\\\\Hub\\\\Editor\\\\60002~1.5F1\\\\Editor\\\\Data\\\\PLAYBA~1\\\\ANDROI~1\\\\NDK\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1/lib/clang/18" -dependency-file "CMakeFiles\\\\cmTC_96ff8.dir\\\\CMakeCXXCompilerABI.cpp.o.d" -MT CMakeFiles/cmTC_96ff8.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -D ANDROID -D _FORTIFY_SOURCE=2 -isysroot "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot" -internal-isystem "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1" -internal-isystem "C:\\\\PROGRA~1\\\\Unity\\\\Hub\\\\Editor\\\\60002~1.5F1\\\\Editor\\\\Data\\\\PLAYBA~1\\\\ANDROI~1\\\\NDK\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1/lib/clang/18/include" -internal-isystem "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/local/include" -internal-externc-isystem "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/aarch64-linux-android" -internal-externc-isystem "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/include" -internal-externc-isystem "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include" -Wformat -fdeprecated-macro -ferror-limit 19 -femulated-tls -stack-protector 2 -fno-signed-char -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -target-feature +outline-atomics -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_96ff8.dir/CMakeCXXCompilerABI.cpp.o -x c++ "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeCXXCompilerABI.cpp"
         clang -cc1 version 18.0.3 based upon LLVM 18.0.3 default target x86_64-w64-windows-gnu
         ignoring nonexistent directory "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/local/include"
         ignoring nonexistent directory "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/include"
@@ -3776,12 +3874,12 @@ events:
          C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/aarch64-linux-android
          C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include
         End of search list.
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\Unity\\Hub\\Editor\\60002~1.5F1\\Editor\\Data\\PLAYBA~1\\ANDROI~1\\NDK\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\bin\\CLANG_~1.EXE --target=aarch64-none-linux-android24 --sysroot="C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot" -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--no-undefined-version -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments   -v CMakeFiles/cmTC_db022.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_db022   && cd ."
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\Unity\\Hub\\Editor\\60002~1.5F1\\Editor\\Data\\PLAYBA~1\\ANDROI~1\\NDK\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\bin\\CLANG_~1.EXE --target=aarch64-none-linux-android24 --sysroot="C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot" -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--no-undefined-version -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments   -v CMakeFiles/cmTC_96ff8.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_96ff8   && cd ."
         Android (12470979, based on r522817c) clang version 18.0.3 (https://android.googlesource.com/toolchain/llvm-project d8003a456d14a3deb8054cdaa529ffbf02d9b262)
         Target: aarch64-none-linux-android24
         Thread model: posix
         InstalledDir: C:/PROGRA~1/Unity/Hub/Editor/60002~1.5F1/Editor/Data/PLAYBA~1/ANDROI~1/NDK/TOOLCH~1/llvm/prebuilt/WINDOW~1/bin
-         "C:/PROGRA~1/Unity/Hub/Editor/60002~1.5F1/Editor/Data/PLAYBA~1/ANDROI~1/NDK/TOOLCH~1/llvm/prebuilt/WINDOW~1/bin/ld.lld" "--sysroot=C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot" -EL --fix-cortex-a53-843419 -z now -z relro -z max-page-size=4096 --hash-style=gnu --eh-frame-hdr -m aarch64linux -pie -dynamic-linker /system/bin/linker64 -o cmTC_db022 "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtbegin_dynamic.o" "-LC:\\\\PROGRA~1\\\\Unity\\\\Hub\\\\Editor\\\\60002~1.5F1\\\\Editor\\\\Data\\\\PLAYBA~1\\\\ANDROI~1\\\\NDK\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1/lib/clang/18/lib/linux/aarch64" "-LC:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/aarch64-linux-android/24" "-LC:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/aarch64-linux-android" "-LC:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib" --build-id=sha1 --no-rosegment --no-undefined-version --fatal-warnings --no-undefined CMakeFiles/cmTC_db022.dir/CMakeCXXCompilerABI.cpp.o "C:\\\\PROGRA~1\\\\Unity\\\\Hub\\\\Editor\\\\60002~1.5F1\\\\Editor\\\\Data\\\\PLAYBA~1\\\\ANDROI~1\\\\NDK\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1/lib/clang/18/lib/linux/libclang_rt.builtins-aarch64-android.a" -l:libunwind.a -ldl -lc "C:\\\\PROGRA~1\\\\Unity\\\\Hub\\\\Editor\\\\60002~1.5F1\\\\Editor\\\\Data\\\\PLAYBA~1\\\\ANDROI~1\\\\NDK\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1/lib/clang/18/lib/linux/libclang_rt.builtins-aarch64-android.a" -l:libunwind.a -ldl "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtend_android.o"
+         "C:/PROGRA~1/Unity/Hub/Editor/60002~1.5F1/Editor/Data/PLAYBA~1/ANDROI~1/NDK/TOOLCH~1/llvm/prebuilt/WINDOW~1/bin/ld.lld" "--sysroot=C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot" -EL --fix-cortex-a53-843419 -z now -z relro -z max-page-size=4096 --hash-style=gnu --eh-frame-hdr -m aarch64linux -pie -dynamic-linker /system/bin/linker64 -o cmTC_96ff8 "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtbegin_dynamic.o" "-LC:\\\\PROGRA~1\\\\Unity\\\\Hub\\\\Editor\\\\60002~1.5F1\\\\Editor\\\\Data\\\\PLAYBA~1\\\\ANDROI~1\\\\NDK\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1/lib/clang/18/lib/linux/aarch64" "-LC:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/aarch64-linux-android/24" "-LC:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/aarch64-linux-android" "-LC:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib" --build-id=sha1 --no-rosegment --no-undefined-version --fatal-warnings --no-undefined CMakeFiles/cmTC_96ff8.dir/CMakeCXXCompilerABI.cpp.o "C:\\\\PROGRA~1\\\\Unity\\\\Hub\\\\Editor\\\\60002~1.5F1\\\\Editor\\\\Data\\\\PLAYBA~1\\\\ANDROI~1\\\\NDK\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1/lib/clang/18/lib/linux/libclang_rt.builtins-aarch64-android.a" -l:libunwind.a -ldl -lc "C:\\\\PROGRA~1\\\\Unity\\\\Hub\\\\Editor\\\\60002~1.5F1\\\\Editor\\\\Data\\\\PLAYBA~1\\\\ANDROI~1\\\\NDK\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1/lib/clang/18/lib/linux/libclang_rt.builtins-aarch64-android.a" -l:libunwind.a -ldl "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtend_android.o"
         
       exitCode: 0
   -
@@ -3816,16 +3914,16 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: 'C:/Users/miguel/AndroidStudioProjects/AARv2Lector/cpp/build-arm64/CMakeFiles/CMakeScratch/TryCompile-b236ct']
+        ignore line: [Change Dir: 'C:/Users/miguel/AndroidStudioProjects/AARv2Lector/cpp/build-arm64/CMakeFiles/CMakeScratch/TryCompile-4v4aqt']
         ignore line: []
-        ignore line: [Run Build Command(s): C:/Users/miguel/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.exe -v cmTC_db022]
-        ignore line: [[1/2] C:\\PROGRA~1\\Unity\\Hub\\Editor\\60002~1.5F1\\Editor\\Data\\PLAYBA~1\\ANDROI~1\\NDK\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\bin\\CLANG_~1.EXE --target=aarch64-none-linux-android24 --sysroot="C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot"   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat    -fPIE   -v -MD -MT CMakeFiles/cmTC_db022.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles\\cmTC_db022.dir\\CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_db022.dir/CMakeCXXCompilerABI.cpp.o -c "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeCXXCompilerABI.cpp"]
+        ignore line: [Run Build Command(s): C:/Users/miguel/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.exe -v cmTC_96ff8]
+        ignore line: [[1/2] C:\\PROGRA~1\\Unity\\Hub\\Editor\\60002~1.5F1\\Editor\\Data\\PLAYBA~1\\ANDROI~1\\NDK\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\bin\\CLANG_~1.EXE --target=aarch64-none-linux-android24 --sysroot="C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot"   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat    -fPIE   -v -MD -MT CMakeFiles/cmTC_96ff8.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles\\cmTC_96ff8.dir\\CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_96ff8.dir/CMakeCXXCompilerABI.cpp.o -c "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeCXXCompilerABI.cpp"]
         ignore line: [Android (12470979  based on r522817c) clang version 18.0.3 (https://android.googlesource.com/toolchain/llvm-project d8003a456d14a3deb8054cdaa529ffbf02d9b262)]
         ignore line: [Target: aarch64-none-linux-android24]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: C:/PROGRA~1/Unity/Hub/Editor/60002~1.5F1/Editor/Data/PLAYBA~1/ANDROI~1/NDK/TOOLCH~1/llvm/prebuilt/WINDOW~1/bin]
         ignore line: [ (in-process)]
-        ignore line: [ "C:\\\\PROGRA~1\\\\Unity\\\\Hub\\\\Editor\\\\60002~1.5F1\\\\Editor\\\\Data\\\\PLAYBA~1\\\\ANDROI~1\\\\NDK\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1\\\\bin\\\\CLANG_~1.EXE" -cc1 -triple aarch64-none-linux-android24 -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu generic -target-feature +neon -target-feature +v8a -target-feature +fix-cortex-a53-835769 -target-abi aapcs -debug-info-kind=constructor -dwarf-version=4 -debugger-tuning=gdb -fdebug-compilation-dir=C:/Users/miguel/AndroidStudioProjects/AARv2Lector/cpp/build-arm64/CMakeFiles/CMakeScratch/TryCompile-b236ct -v -ffunction-sections -fdata-sections -fcoverage-compilation-dir=C:/Users/miguel/AndroidStudioProjects/AARv2Lector/cpp/build-arm64/CMakeFiles/CMakeScratch/TryCompile-b236ct -resource-dir "C:\\\\PROGRA~1\\\\Unity\\\\Hub\\\\Editor\\\\60002~1.5F1\\\\Editor\\\\Data\\\\PLAYBA~1\\\\ANDROI~1\\\\NDK\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1/lib/clang/18" -dependency-file "CMakeFiles\\\\cmTC_db022.dir\\\\CMakeCXXCompilerABI.cpp.o.d" -MT CMakeFiles/cmTC_db022.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -D ANDROID -D _FORTIFY_SOURCE=2 -isysroot "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot" -internal-isystem "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1" -internal-isystem "C:\\\\PROGRA~1\\\\Unity\\\\Hub\\\\Editor\\\\60002~1.5F1\\\\Editor\\\\Data\\\\PLAYBA~1\\\\ANDROI~1\\\\NDK\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1/lib/clang/18/include" -internal-isystem "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/local/include" -internal-externc-isystem "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/aarch64-linux-android" -internal-externc-isystem "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/include" -internal-externc-isystem "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include" -Wformat -fdeprecated-macro -ferror-limit 19 -femulated-tls -stack-protector 2 -fno-signed-char -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -target-feature +outline-atomics -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_db022.dir/CMakeCXXCompilerABI.cpp.o -x c++ "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeCXXCompilerABI.cpp"]
+        ignore line: [ "C:\\\\PROGRA~1\\\\Unity\\\\Hub\\\\Editor\\\\60002~1.5F1\\\\Editor\\\\Data\\\\PLAYBA~1\\\\ANDROI~1\\\\NDK\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1\\\\bin\\\\CLANG_~1.EXE" -cc1 -triple aarch64-none-linux-android24 -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu generic -target-feature +neon -target-feature +v8a -target-feature +fix-cortex-a53-835769 -target-abi aapcs -debug-info-kind=constructor -dwarf-version=4 -debugger-tuning=gdb -fdebug-compilation-dir=C:/Users/miguel/AndroidStudioProjects/AARv2Lector/cpp/build-arm64/CMakeFiles/CMakeScratch/TryCompile-4v4aqt -v -ffunction-sections -fdata-sections -fcoverage-compilation-dir=C:/Users/miguel/AndroidStudioProjects/AARv2Lector/cpp/build-arm64/CMakeFiles/CMakeScratch/TryCompile-4v4aqt -resource-dir "C:\\\\PROGRA~1\\\\Unity\\\\Hub\\\\Editor\\\\60002~1.5F1\\\\Editor\\\\Data\\\\PLAYBA~1\\\\ANDROI~1\\\\NDK\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1/lib/clang/18" -dependency-file "CMakeFiles\\\\cmTC_96ff8.dir\\\\CMakeCXXCompilerABI.cpp.o.d" -MT CMakeFiles/cmTC_96ff8.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -D ANDROID -D _FORTIFY_SOURCE=2 -isysroot "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot" -internal-isystem "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1" -internal-isystem "C:\\\\PROGRA~1\\\\Unity\\\\Hub\\\\Editor\\\\60002~1.5F1\\\\Editor\\\\Data\\\\PLAYBA~1\\\\ANDROI~1\\\\NDK\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1/lib/clang/18/include" -internal-isystem "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/local/include" -internal-externc-isystem "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/aarch64-linux-android" -internal-externc-isystem "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/include" -internal-externc-isystem "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include" -Wformat -fdeprecated-macro -ferror-limit 19 -femulated-tls -stack-protector 2 -fno-signed-char -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -target-feature +outline-atomics -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_96ff8.dir/CMakeCXXCompilerABI.cpp.o -x c++ "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeCXXCompilerABI.cpp"]
         ignore line: [clang -cc1 version 18.0.3 based upon LLVM 18.0.3 default target x86_64-w64-windows-gnu]
         ignore line: [ignoring nonexistent directory "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/local/include"]
         ignore line: [ignoring nonexistent directory "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/include"]
@@ -3836,12 +3934,12 @@ events:
         ignore line: [ C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/aarch64-linux-android]
         ignore line: [ C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include]
         ignore line: [End of search list.]
-        ignore line: [[2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\Unity\\Hub\\Editor\\60002~1.5F1\\Editor\\Data\\PLAYBA~1\\ANDROI~1\\NDK\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\bin\\CLANG_~1.EXE --target=aarch64-none-linux-android24 --sysroot="C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot" -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -static-libstdc++ -Wl --build-id=sha1 -Wl --no-rosegment -Wl --no-undefined-version -Wl --fatal-warnings -Wl --no-undefined -Qunused-arguments   -v CMakeFiles/cmTC_db022.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_db022   && cd ."]
+        ignore line: [[2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\Unity\\Hub\\Editor\\60002~1.5F1\\Editor\\Data\\PLAYBA~1\\ANDROI~1\\NDK\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\bin\\CLANG_~1.EXE --target=aarch64-none-linux-android24 --sysroot="C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot" -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -static-libstdc++ -Wl --build-id=sha1 -Wl --no-rosegment -Wl --no-undefined-version -Wl --fatal-warnings -Wl --no-undefined -Qunused-arguments   -v CMakeFiles/cmTC_96ff8.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_96ff8   && cd ."]
         ignore line: [Android (12470979  based on r522817c) clang version 18.0.3 (https://android.googlesource.com/toolchain/llvm-project d8003a456d14a3deb8054cdaa529ffbf02d9b262)]
         ignore line: [Target: aarch64-none-linux-android24]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: C:/PROGRA~1/Unity/Hub/Editor/60002~1.5F1/Editor/Data/PLAYBA~1/ANDROI~1/NDK/TOOLCH~1/llvm/prebuilt/WINDOW~1/bin]
-        link line: [ "C:/PROGRA~1/Unity/Hub/Editor/60002~1.5F1/Editor/Data/PLAYBA~1/ANDROI~1/NDK/TOOLCH~1/llvm/prebuilt/WINDOW~1/bin/ld.lld" "--sysroot=C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot" -EL --fix-cortex-a53-843419 -z now -z relro -z max-page-size=4096 --hash-style=gnu --eh-frame-hdr -m aarch64linux -pie -dynamic-linker /system/bin/linker64 -o cmTC_db022 "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtbegin_dynamic.o" "-LC:\\\\PROGRA~1\\\\Unity\\\\Hub\\\\Editor\\\\60002~1.5F1\\\\Editor\\\\Data\\\\PLAYBA~1\\\\ANDROI~1\\\\NDK\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1/lib/clang/18/lib/linux/aarch64" "-LC:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/aarch64-linux-android/24" "-LC:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/aarch64-linux-android" "-LC:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib" --build-id=sha1 --no-rosegment --no-undefined-version --fatal-warnings --no-undefined CMakeFiles/cmTC_db022.dir/CMakeCXXCompilerABI.cpp.o "C:\\\\PROGRA~1\\\\Unity\\\\Hub\\\\Editor\\\\60002~1.5F1\\\\Editor\\\\Data\\\\PLAYBA~1\\\\ANDROI~1\\\\NDK\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1/lib/clang/18/lib/linux/libclang_rt.builtins-aarch64-android.a" -l:libunwind.a -ldl -lc "C:\\\\PROGRA~1\\\\Unity\\\\Hub\\\\Editor\\\\60002~1.5F1\\\\Editor\\\\Data\\\\PLAYBA~1\\\\ANDROI~1\\\\NDK\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1/lib/clang/18/lib/linux/libclang_rt.builtins-aarch64-android.a" -l:libunwind.a -ldl "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtend_android.o"]
+        link line: [ "C:/PROGRA~1/Unity/Hub/Editor/60002~1.5F1/Editor/Data/PLAYBA~1/ANDROI~1/NDK/TOOLCH~1/llvm/prebuilt/WINDOW~1/bin/ld.lld" "--sysroot=C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot" -EL --fix-cortex-a53-843419 -z now -z relro -z max-page-size=4096 --hash-style=gnu --eh-frame-hdr -m aarch64linux -pie -dynamic-linker /system/bin/linker64 -o cmTC_96ff8 "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtbegin_dynamic.o" "-LC:\\\\PROGRA~1\\\\Unity\\\\Hub\\\\Editor\\\\60002~1.5F1\\\\Editor\\\\Data\\\\PLAYBA~1\\\\ANDROI~1\\\\NDK\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1/lib/clang/18/lib/linux/aarch64" "-LC:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/aarch64-linux-android/24" "-LC:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/aarch64-linux-android" "-LC:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib" --build-id=sha1 --no-rosegment --no-undefined-version --fatal-warnings --no-undefined CMakeFiles/cmTC_96ff8.dir/CMakeCXXCompilerABI.cpp.o "C:\\\\PROGRA~1\\\\Unity\\\\Hub\\\\Editor\\\\60002~1.5F1\\\\Editor\\\\Data\\\\PLAYBA~1\\\\ANDROI~1\\\\NDK\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1/lib/clang/18/lib/linux/libclang_rt.builtins-aarch64-android.a" -l:libunwind.a -ldl -lc "C:\\\\PROGRA~1\\\\Unity\\\\Hub\\\\Editor\\\\60002~1.5F1\\\\Editor\\\\Data\\\\PLAYBA~1\\\\ANDROI~1\\\\NDK\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1/lib/clang/18/lib/linux/libclang_rt.builtins-aarch64-android.a" -l:libunwind.a -ldl "C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtend_android.o"]
           arg [C:/PROGRA~1/Unity/Hub/Editor/60002~1.5F1/Editor/Data/PLAYBA~1/ANDROI~1/NDK/TOOLCH~1/llvm/prebuilt/WINDOW~1/bin/ld.lld] ==> ignore
           arg [--sysroot=C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot] ==> ignore
           arg [-EL] ==> ignore
@@ -3857,7 +3955,7 @@ events:
           arg [-dynamic-linker] ==> ignore
           arg [/system/bin/linker64] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_db022] ==> ignore
+          arg [cmTC_96ff8] ==> ignore
           arg [C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtbegin_dynamic.o] ==> obj [C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtbegin_dynamic.o]
           arg [-LC:\\\\PROGRA~1\\\\Unity\\\\Hub\\\\Editor\\\\60002~1.5F1\\\\Editor\\\\Data\\\\PLAYBA~1\\\\ANDROI~1\\\\NDK\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1/lib/clang/18/lib/linux/aarch64] ==> dir [C:\\\\PROGRA~1\\\\Unity\\\\Hub\\\\Editor\\\\60002~1.5F1\\\\Editor\\\\Data\\\\PLAYBA~1\\\\ANDROI~1\\\\NDK\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1/lib/clang/18/lib/linux/aarch64]
           arg [-LC:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/aarch64-linux-android/24] ==> dir [C:/Program Files/Unity/Hub/Editor/6000.2.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/aarch64-linux-android/24]
@@ -3868,7 +3966,7 @@ events:
           arg [--no-undefined-version] ==> ignore
           arg [--fatal-warnings] ==> ignore
           arg [--no-undefined] ==> ignore
-          arg [CMakeFiles/cmTC_db022.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_96ff8.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [C:\\\\PROGRA~1\\\\Unity\\\\Hub\\\\Editor\\\\60002~1.5F1\\\\Editor\\\\Data\\\\PLAYBA~1\\\\ANDROI~1\\\\NDK\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1/lib/clang/18/lib/linux/libclang_rt.builtins-aarch64-android.a] ==> lib [C:\\\\PROGRA~1\\\\Unity\\\\Hub\\\\Editor\\\\60002~1.5F1\\\\Editor\\\\Data\\\\PLAYBA~1\\\\ANDROI~1\\\\NDK\\\\TOOLCH~1\\\\llvm\\\\prebuilt\\\\WINDOW~1/lib/clang/18/lib/linux/libclang_rt.builtins-aarch64-android.a]
           arg [-l:libunwind.a] ==> lib [-l:libunwind.a]
           arg [-ldl] ==> lib [dl]

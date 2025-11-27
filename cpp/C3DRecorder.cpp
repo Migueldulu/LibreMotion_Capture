@@ -166,14 +166,12 @@ static const char* kHandJointNames[26] = {
 
 void C3DRecorder::buildPointNames(std::vector<std::string>& outPointNames) const {
     outPointNames.clear();
-    outPointNames.reserve(5 + 26 + 26 + 4);
+    outPointNames.reserve(3 + 26 + 26 + 4);
 
     //segun el modelo de Gait sera RFHD o LFWD
     outPointNames.emplace_back("HEAD");
     outPointNames.emplace_back("LFHD");
     outPointNames.emplace_back("RFHD");
-    outPointNames.emplace_back("LCTRL");
-    outPointNames.emplace_back("RCTRL");
 
     // Joints mano izquierda siguiendo el orden de XrHandJointEXT
     for (int i = 0; i < 26; ++i) {
@@ -203,8 +201,6 @@ void C3DRecorder::buildAnalogNames(std::vector<std::string>& outAnalogNames) con
     };
 
     addQuat("HMD");
-    addQuat("LCTRL");
-    addQuat("RCTRL");
 
     // Manos: L_*
     for (int i = 0; i < 26; ++i) {
@@ -304,6 +300,58 @@ void calculateWristWidthFromJoint(const JointSamplePlain& joint, Vector3& pointR
     };
 }
 
+// Convierte metros a milimetros (solo posiciones)
+inline void metersToMillimeters(float& x, float& y, float& z) {
+    const float k = 1000.0f;
+    x *= k;
+    y *= k;
+    z *= k;
+}
+inline void metersToMillimeters(Vector3& v) {
+    metersToMillimeters(v.x, v.y, v.z);
+}
+
+// Sistema coordenadas OpenXR to gait: X_g = -Z_old (delante)  Y_g = -X_old (izq)  Z_g =  Y_old (arriba)
+inline void openxrToGaitAxes(float& x, float& y, float& z) {
+    const float ox = x;
+    const float oy = y;
+    const float oz = z;
+
+    x = -oz;  // delantero +
+    y = -ox;  // izquierda +
+    z =  oy;  // arriba +
+}
+inline void openxrToGaitAxes(Vector3& v) {
+    openxrToGaitAxes(v.x, v.y, v.z);
+}
+
+// Multiplica q_out = q_a * q_b (para cambiar sistema de cuaterniones)
+inline void quatMul(const float ax, const float ay, const float az, const float aw,
+                    const float bx, const float by, const float bz, const float bw,
+                    float& rx, float& ry, float& rz, float& rw) {
+    rx = aw*bx + ax*bw + ay*bz - az*by;
+    ry = aw*by - ax*bz + ay*bw + az*bx;
+    rz = aw*bz + ax*by - ay*bx + az*bw;
+    rw = aw*bw - ax*bx - ay*by - az*bz;
+}
+
+// Aplica el cambio de ejes OpenXR -> gait al cuaternio (x,y,z,w)
+inline void openxrToGaitAxesQuat(float& qx, float& qy, float& qz, float& qw) {
+    // Cuaternion fijo que implementa la misma transformacion que openxrToGaitAxes en vectores
+    const float ax =  0.5f;
+    const float ay = -0.5f;
+    const float az = -0.5f;
+    const float aw =  0.5f;
+
+    float rx, ry, rz, rw;
+    quatMul(ax, ay, az, aw, qx, qy, qz, qw, rx, ry, rz, rw);
+
+    qx = rx;
+    qy = ry;
+    qz = rz;
+    qw = rw;
+}
+
 // --- Escritura real con ezc3d (version en memoria, simple) ---
 void C3DRecorder::writeC3D() {
     // Creamos un C3D vacio
@@ -331,7 +379,7 @@ void C3DRecorder::writeC3D() {
     {
         // POINT:UNITS
         ezc3d::ParametersNS::GroupNS::Parameter pointUnits("UNITS");
-        pointUnits.set(std::vector<std::string>{"m"});
+        pointUnits.set(std::vector<std::string>{"mm"});
         c3d.parameter("POINT", pointUnits);
         // POINT:RATE
         ezc3d::ParametersNS::GroupNS::Parameter pointRate("RATE");
@@ -370,93 +418,162 @@ void C3DRecorder::writeC3D() {
                 points.point(p, static_cast<int>(pi));
             }
 
-            // HMD en indice 0
+            // Indices coherentes con buildPointNames
+            const size_t IDX_HEAD        = 0;
+            const size_t IDX_LFHD        = 1;
+            const size_t IDX_RFHD        = 2;
+            const size_t IDX_L_HAND_BASE = 3;                        // 26 joints L
+            const size_t IDX_R_HAND_BASE = IDX_L_HAND_BASE + 26;     // 26 joints R
+            const int FIN_JOINT_INDEX = 7; // en kHandJointNames[7] = "FIN"
+            const size_t IDX_LFIN = IDX_L_HAND_BASE + FIN_JOINT_INDEX;
+            const size_t IDX_RFIN = IDX_R_HAND_BASE + FIN_JOINT_INDEX;
+            const size_t IDX_LWRA        = IDX_R_HAND_BASE + 26;
+            const size_t IDX_LWRB        = IDX_LWRA + 1;
+            const size_t IDX_RWRA        = IDX_LWRA + 2;
+            const size_t IDX_RWRB        = IDX_LWRA + 3;
+
+            // HMD (HEAD)
+            {
+                float x = f.hmdPose.position[0];
+                float y = f.hmdPose.position[1];
+                float z = f.hmdPose.position[2];
+
+                openxrToGaitAxes(x, y, z);
+                metersToMillimeters(x, y, z);
+
+                Point p;
+                p.x(x);
+                p.y(y);
+                p.z(z);
+                p.residual(0.0);
+                points.point(p, static_cast<int>(IDX_HEAD));
+            }
+
+            // Cabeza: LFHD / RFHD
+            Vector3 headRight, headLeft;
+            calculateHeadWidth(f.hmdPose, headRight, headLeft, 0.15f);
+
+            // LFHD = lado izquierdo
+            openxrToGaitAxes(headLeft);
+            metersToMillimeters(headLeft);
             {
                 Point p;
-                p.x(f.hmdPose.position[0]);
-                p.y(f.hmdPose.position[1]);
-                p.z(f.hmdPose.position[2]);
+                p.x(headLeft.x);
+                p.y(headLeft.y);
+                p.z(headLeft.z);
                 p.residual(0.0);
-                points.point(p, 0);
+                points.point(p, static_cast<int>(IDX_LFHD));
             }
 
-            Vector3 lfhdVec, rfhdVec;
-            calculateHeadWidth(f.hmdPose, lfhdVec, rfhdVec, 0.15f);
-            // LFHD
+            // RFHD = lado derecho
+            openxrToGaitAxes(headRight);
+            metersToMillimeters(headRight);
             {
                 Point p;
-                p.x(lfhdVec.x);
-                p.y(lfhdVec.y);
-                p.z(lfhdVec.z);
+                p.x(headRight.x);
+                p.y(headRight.y);
+                p.z(headRight.z);
                 p.residual(0.0);
-                points.point(p, 1);
+                points.point(p, static_cast<int>(IDX_RFHD));
             }
 
-            // RFHD
-            {
-                Point p;
-                p.x(rfhdVec.x);
-                p.y(rfhdVec.y);
-                p.z(rfhdVec.z);
-                p.residual(0.0);
-                points.point(p, 2);
+            // L_CTRL (siempre que este activo se supone que hay 0 joints pero metemos doble comprobacion)
+            if (f.leftCtrl.isActive && f.leftHandJointCount==0) {
+                float x = f.leftCtrl.pose.position[0];
+                float y = f.leftCtrl.pose.position[1];
+                float z = f.leftCtrl.pose.position[2];
+
+                const bool isZero = (x == 0.0f && y == 0.0f && z == 0.0f);
+                openxrToGaitAxes(x, y, z);
+                metersToMillimeters(x, y, z);
+
+                if (!isZero) {
+                    Point p;
+                    p.x(x);
+                    p.y(y);
+                    p.z(z);
+                    p.residual(0.0);
+                    points.point(p, static_cast<int>(IDX_LFIN));
+                }
             }
 
-            // L_CTRL en indice 1 (solo si esta activo)
-            if (f.leftCtrl.isActive) {
-                Point p;
-                p.x(f.leftCtrl.pose.position[0]);
-                p.y(f.leftCtrl.pose.position[1]);
-                p.z(f.leftCtrl.pose.position[2]);
-                p.residual(0.0);
-                points.point(p, 3);
+            // R_CTRL (si esta activo)
+            if (f.rightCtrl.isActive && f.rightHandJointCount==0) {
+                float x = f.rightCtrl.pose.position[0];
+                float y = f.rightCtrl.pose.position[1];
+                float z = f.rightCtrl.pose.position[2];
+                const bool isZero = (x == 0.0f && y == 0.0f && z == 0.0f);
+
+                openxrToGaitAxes(x, y, z);
+                metersToMillimeters(x, y, z);
+
+                if (!isZero) {
+                    Point p;
+                    p.x(x);
+                    p.y(y);
+                    p.z(z);
+                    p.residual(0.0);
+                    points.point(p, static_cast<int>(IDX_RFIN));
+                }
             }
 
-            // R_CTRL en indice 2 (solo si esta activo)
-            if (f.rightCtrl.isActive) {
-                Point p;
-                p.x(f.rightCtrl.pose.position[0]);
-                p.y(f.rightCtrl.pose.position[1]);
-                p.z(f.rightCtrl.pose.position[2]);
-                p.residual(0.0);
-                points.point(p, 4);
-            }
-
-            // Manos: L_J0..L_J25
+            // Manos: joints L
             for (int j = 0; j < f.leftHandJointCount && j < 26; ++j) {
                 const auto& s = f.leftHandJoints[j];
-                Point p;
-                p.x(s.px);
-                p.y(s.py);
-                p.z(s.pz);
-                p.residual(s.hasPose ? 0.0 : -1.0);
-                points.point(p, 5 + j);
+                float x = s.px;
+                float y = s.py;
+                float z = s.pz;
+
+                const bool isZero = (x == 0.0f && y == 0.0f && z == 0.0f);
+                openxrToGaitAxes(x, y, z);
+                metersToMillimeters(x, y, z);
+
+                if(!isZero) {
+                    Point p;
+                    p.x(x);
+                    p.y(y);
+                    p.z(z);
+                    p.residual(s.hasPose ? 0.0 : -1.0);
+                    points.point(p, static_cast<int>(IDX_L_HAND_BASE + j));
+                }
             }
 
-            // Manos: R_J0..R_J25
+            // Manos: joints R
             for (int j = 0; j < f.rightHandJointCount && j < 26; ++j) {
                 const auto& s = f.rightHandJoints[j];
-                Point p;
-                p.x(s.px);
-                p.y(s.py);
-                p.z(s.pz);
-                p.residual(s.hasPose ? 0.0 : -1.0);
-                points.point(p, 5 + 26 + j);
+                float x = s.px;
+                float y = s.py;
+                float z = s.pz;
+
+                const bool isZero = (x == 0.0f && y == 0.0f && z == 0.0f);
+                openxrToGaitAxes(x, y, z);
+                metersToMillimeters(x, y, z);
+
+                if(!isZero) {
+                    Point p;
+                    p.x(x);
+                    p.y(y);
+                    p.z(z);
+                    p.residual(s.hasPose ? 0.0 : -1.0);
+                    points.point(p, static_cast<int>(IDX_R_HAND_BASE + j));
+                }
             }
 
             // Puntos extra de muneca tipo LWRA/LWRB/RWRA/RWRB
-            const size_t IDX_LWRA = 5 + 26 + 26;       // despues de L+R joints
-            const size_t IDX_LWRB = IDX_LWRA + 1;
-            const size_t IDX_RWRA = IDX_LWRA + 2;
-            const size_t IDX_RWRB = IDX_LWRA + 3;
-
-            // Mano izquierda: asumimos joint 0 = WRIST (como en kHandJointNames)
+            // Mano izquierda: joint 0 = WRIST
             if (f.leftHandJointCount > 0) {
                 const auto& wrist = f.leftHandJoints[0];
                 if (wrist.hasPose) {
                     Vector3 wra, wrb;
                     calculateWristWidthFromJoint(wrist, wra, wrb, 0.06f);
-                    {
+
+                    const bool isZero = (wrist.px == 0.0f && wrist.py == 0.0f && wrist.pz == 0.0f);
+                    openxrToGaitAxes(wra);
+                    metersToMillimeters(wra);
+                    openxrToGaitAxes(wrb);
+                    metersToMillimeters(wrb);
+
+                    if(!isZero){
                         Point p;
                         p.x(wra.x);
                         p.y(wra.y);
@@ -464,7 +581,7 @@ void C3DRecorder::writeC3D() {
                         p.residual(0.0);
                         points.point(p, static_cast<int>(IDX_LWRA));
                     }
-                    {
+                    if(!isZero){
                         Point p;
                         p.x(wrb.x);
                         p.y(wrb.y);
@@ -481,24 +598,33 @@ void C3DRecorder::writeC3D() {
                 if (wrist.hasPose) {
                     Vector3 wra, wrb;
                     calculateWristWidthFromJoint(wrist, wra, wrb, 0.06f);
-                    {
-                        Point p;
-                        p.x(wra.x);
-                        p.y(wra.y);
-                        p.z(wra.z);
-                        p.residual(0.0);
-                        points.point(p, static_cast<int>(IDX_RWRA));
-                    }
-                    {
+
+                    const bool isZero = (wrist.px == 0.0f && wrist.py == 0.0f && wrist.pz == 0.0f);
+                    openxrToGaitAxes(wra);
+                    metersToMillimeters(wra);
+                    openxrToGaitAxes(wrb);
+                    metersToMillimeters(wrb);
+
+                    // OJO: invertimos A/B para que RWRA/RWRB no queden cruzados
+                    if(!isZero){
                         Point p;
                         p.x(wrb.x);
                         p.y(wrb.y);
                         p.z(wrb.z);
                         p.residual(0.0);
+                        points.point(p, static_cast<int>(IDX_RWRA));
+                    }
+                    if(!isZero){
+                        Point p;
+                        p.x(wra.x);
+                        p.y(wra.y);
+                        p.z(wra.z);
+                        p.residual(0.0);
                         points.point(p, static_cast<int>(IDX_RWRB));
                     }
                 }
             }
+
             frame.points() = points;
         }
 
@@ -521,38 +647,69 @@ void C3DRecorder::writeC3D() {
             size_t idx = 0;
 
             // HMD_q*
-            setChan(idx++, f.hmdPose.rotation[0]);
-            setChan(idx++, f.hmdPose.rotation[1]);
-            setChan(idx++, f.hmdPose.rotation[2]);
-            setChan(idx++, f.hmdPose.rotation[3]);
+            {
+                float qx = f.hmdPose.rotation[0];
+                float qy = f.hmdPose.rotation[1];
+                float qz = f.hmdPose.rotation[2];
+                float qw = f.hmdPose.rotation[3];
+
+                openxrToGaitAxesQuat(qx, qy, qz, qw);
+
+                setChan(idx++, qx);
+                setChan(idx++, qy);
+                setChan(idx++, qz);
+                setChan(idx++, qw);
+            }
 
             // L_CTRL_q*
-            setChan(idx++, f.leftCtrl.pose.rotation[0]);
-            setChan(idx++, f.leftCtrl.pose.rotation[1]);
-            setChan(idx++, f.leftCtrl.pose.rotation[2]);
-            setChan(idx++, f.leftCtrl.pose.rotation[3]);
+            if (f.leftCtrl.isActive && f.leftHandJointCount==0){
+                float qx = f.leftCtrl.pose.rotation[0];
+                float qy = f.leftCtrl.pose.rotation[1];
+                float qz = f.leftCtrl.pose.rotation[2];
+                float qw = f.leftCtrl.pose.rotation[3];
+
+                openxrToGaitAxesQuat(qx, qy, qz, qw);
+
+                setChan(idx++, qx);
+                setChan(idx++, qy);
+                setChan(idx++, qz);
+                setChan(idx++, qw);
+            }
 
             // R_CTRL_q*
-            setChan(idx++, f.rightCtrl.pose.rotation[0]);
-            setChan(idx++, f.rightCtrl.pose.rotation[1]);
-            setChan(idx++, f.rightCtrl.pose.rotation[2]);
-            setChan(idx++, f.rightCtrl.pose.rotation[3]);
+            if (f.rightCtrl.isActive && f.rightHandJointCount==0){
+                float qx = f.rightCtrl.pose.rotation[0];
+                float qy = f.rightCtrl.pose.rotation[1];
+                float qz = f.rightCtrl.pose.rotation[2];
+                float qw = f.rightCtrl.pose.rotation[3];
+
+                openxrToGaitAxesQuat(qx, qy, qz, qw);
+
+                setChan(idx++, qx);
+                setChan(idx++, qy);
+                setChan(idx++, qz);
+                setChan(idx++, qw);
+            }
 
             // L_Joints
             for (int j = 0; j < f.leftHandJointCount && j < 26; ++j) {
                 const auto& s = f.leftHandJoints[j];
-                setChan(idx++, s.qx);
-                setChan(idx++, s.qy);
-                setChan(idx++, s.qz);
-                setChan(idx++, s.qw);
+                float qx = s.qx, qy = s.qy, qz = s.qz, qw = s.qw;
+                openxrToGaitAxesQuat(qx, qy, qz, qw);
+                setChan(idx++, qx);
+                setChan(idx++, qy);
+                setChan(idx++, qz);
+                setChan(idx++, qw);
             }
             // R_Joints
             for (int j = 0; j < f.rightHandJointCount && j < 26; ++j) {
                 const auto& s = f.rightHandJoints[j];
-                setChan(idx++, s.qx);
-                setChan(idx++, s.qy);
-                setChan(idx++, s.qz);
-                setChan(idx++, s.qw);
+                float qx = s.qx, qy = s.qy, qz = s.qz, qw = s.qw;
+                openxrToGaitAxesQuat(qx, qy, qz, qw);
+                setChan(idx++, qx);
+                setChan(idx++, qy);
+                setChan(idx++, qz);
+                setChan(idx++, qw);
             }
 
             while (idx + 1 < nbAnalogs) { // dejamos el ultimo para RealTime
