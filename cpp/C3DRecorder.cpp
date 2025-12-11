@@ -14,13 +14,14 @@
 #define LOGI(...) __android_log_print(ANDROID_LOG_INFO,  LOG_TAG, __VA_ARGS__)
 #define LOGE(...) __android_log_print(ANDROID_LOG_ERROR, LOG_TAG, __VA_ARGS__)
 
+// Simple 3D vector helper used internally for geometry operations
 struct Vector3 {
     float x, y, z;
 };
 
 C3DRecorder::C3DRecorder() {}
 C3DRecorder::~C3DRecorder() {
-    // Por seguridad: si alguien se olvida de llamar a finalize,
+    // Safety, if someone forgets to call C3Dfinalize explicitly, we end it automatically to avoid losing data.
     if (initialized_ && !finalized_) {
         C3Dfinalize();
     }
@@ -31,10 +32,9 @@ bool C3DRecorder::C3DisInitialized() const {
     return initialized_;
 }
 
-// Por si el nombre de sesion trae algun caracter no permitido
 std::string C3DRecorder::sanitizeSessionId(const std::string& raw) const {
     std::string s = raw;
-    // Reemplaza caracteres raros por '_'
+    // Replace invalid characters with underscore
     for (char& c : s) {
         if (!( (c >= '0' && c <= '9') ||
                (c >= 'A' && c <= 'Z') ||
@@ -47,8 +47,8 @@ std::string C3DRecorder::sanitizeSessionId(const std::string& raw) const {
     return s;
 }
 
-// Construye /sdcard/Android/data/<pkg>/files/session_<sessionId>.c3d
-// reutilizando configReader::getExpectedConfigPath
+// Builds /sdcard/Android/data/<pkg>/files/session_<sessionId>.c3d
+// Reusing configReader::getExpectedConfigPath
 std::string C3DRecorder::buildOutputPath(const UploaderConfig& cfg) {
     std::string cfgPath;
     if (!configReader::getExpectedConfigPath(cfgPath)) {
@@ -56,7 +56,7 @@ std::string C3DRecorder::buildOutputPath(const UploaderConfig& cfg) {
         return "";
     }
 
-    // Nos quedamos solo con el directorio de initialConfig.json
+    // Keep only the directory of initialConfig.json, if something looks strange: use /sdcard
     size_t pos = cfgPath.find_last_of("/\\");
     std::string dir;
     if (pos == std::string::npos) {
@@ -94,7 +94,7 @@ bool C3DRecorder::C3Dinitialize(const UploaderConfig& cfg, int frameRate) {
     LOGI("C3DRecorder initialized. Path='%s', frameRate=%d",
          filePath_.c_str(), frameRate_);
 
-    // No abrimos nada todavia: ezc3d escribira en finalize.
+    // We do not open any file yet; ezc3d will write everything in finalize.
     return true;
 }
 
@@ -106,10 +106,8 @@ void C3DRecorder::C3DrecordFrame(const VRFrameDataPlain& frame) {
     frames_.push_back(frame);
 }
 
-// Streaming real mas adelante,
 void C3DRecorder::C3Dflush() {
-    // En esta primera version no hacemos flush parcial para evitar
-    // complicar el layout del C3D. Se deja preparado para futuro.
+    // nothing until longer time session requires it
 }
 
 void C3DRecorder::C3Dfinalize() {
@@ -127,63 +125,64 @@ void C3DRecorder::C3Dfinalize() {
     LOGI("C3DRecorder: writing C3D file '%s' with %zu frames",
          filePath_.c_str(), frames_.size());
 
-// Sin try/catch porque estamos compilando con -fno-exceptions
     writeC3D();
 
     finalized_ = true;
 }
 
-//nombres OpenXRHandJoints -> cambiando palm y wrist de orden porque asi se reciben
-// Cambiamos INDEX_PROXIMAl por FIN para que coincida con Gait Model (LFIN y RFIN)
+// OpenXRHandJoints names, but changing palm and wrist order bc thats how its received via unity/unreal
+// Tags are shorter to match similar tags received from full body measurements INDEX_PROXIMAl=FIN as in Gait Model (LFIN y RFIN)
+// The rest of the tag codes: Thumb T - Index I - Middle M - Ring R - Little L
+// Metacarpal MC - Proximal PX - Distal DI - TIP TP - Intermediate IM
 static const char* kHandJointNames[26] = {
-        "WRIST",
-        "PALM",
-        "THUMB_METACARPAL",
-        "THUMB_PROXIMAL",
-        "THUMB_DISTAL",
-        "THUMB_TIP",
-        "INDEX_METACARPAL",
+        "WRT",
+        "PLM",
+        "TMC",
+        "TPX",
+        "TDI",
+        "TTP",
+        "IMC",
         "FIN",
-        "INDEX_INTERMEDIATE",
-        "INDEX_DISTAL",
-        "INDEX_TIP",
-        "MIDDLE_METACARPAL",
-        "MIDDLE_PROXIMAL",
-        "MIDDLE_INTERMEDIATE",
-        "MIDDLE_DISTAL",
-        "MIDDLE_TIP",
-        "RING_METACARPAL",
-        "RING_PROXIMAL",
-        "RING_INTERMEDIATE",
-        "RING_DISTAL",
-        "RING_TIP",
-        "LITTLE_METACARPAL",
-        "LITTLE_PROXIMAL",
-        "LITTLE_INTERMEDIATE",
-        "LITTLE_DISTAL",
-        "LITTLE_TIP"
+        "IIM",
+        "IDI",
+        "ITP",
+        "MMC",
+        "MPX",
+        "MIM",
+        "MDI",
+        "MTP",
+        "RMC",
+        "RPX",
+        "RIM",
+        "RDI",
+        "RTP",
+        "LMC",
+        "LPX",
+        "LIM",
+        "LDI",
+        "LTP"
 };
 
+//
 void C3DRecorder::buildPointNames(std::vector<std::string>& outPointNames) const {
     outPointNames.clear();
     outPointNames.reserve(3 + 26 + 26 + 4);
 
-    //segun el modelo de Gait sera RFHD o LFWD
     outPointNames.emplace_back("HEAD");
     outPointNames.emplace_back("LFHD");
     outPointNames.emplace_back("RFHD");
 
-    // Joints mano izquierda siguiendo el orden de XrHandJointEXT
+    // Left hand joints in XrHandJointEXT order
     for (int i = 0; i < 26; ++i) {
         outPointNames.emplace_back(std::string("L") + kHandJointNames[i]);
     }
 
-    // Joints mano derecha siguiendo el mismo orden
+    // Right hand joints in XrHandJointEXT order
     for (int i = 0; i < 26; ++i) {
         outPointNames.emplace_back(std::string("R") + kHandJointNames[i]);
     }
 
-    // Puntos extra tipo Plug-in Gait para la muñeca
+    // Wxtra wrist markers similar to Plug-in Gait conventions
     outPointNames.emplace_back("LWRA");
     outPointNames.emplace_back("LWRB");
     outPointNames.emplace_back("RWRA");
@@ -211,23 +210,24 @@ void C3DRecorder::buildAnalogNames(std::vector<std::string>& outAnalogNames) con
     for (int i = 0; i < 26; ++i) {
         addQuat(std::string("R") + kHandJointNames[i]);
     }
-    // Canal extra: timestamp en segundos
+    // Necessary extra channel since our record frequency has jitter (not expected usually on C3d files)
     outAnalogNames.emplace_back("RealTime");
 }
 
-//pequeno helper para calcular las posiciones exteriores de la cabeza
-//primero rotamos el vector y luego sumamos 7.5cm (15/2) a cada lado
+// helper to calculate 2 points from center-eye to match Gait Model front head points
+// First we rotate the given vector so we can add a fixed width
 void calculateHeadWidth(const VRPosePlain& midPos,Vector3& pointRight,Vector3& pointLeft, float headWidth) {
+
     const float halfWidth = headWidth / 2.0f;
 
-    // Extraer componentes
+    // Extract quaternion components
     float qx = midPos.rotation[0], qy =  midPos.rotation[1], qz =  midPos.rotation[2], qw =  midPos.rotation[3];
 
-    // Vector lateral en el sistema local de la cabeza
+    // Lateral vector in local head space
     Vector3 vLocal;
     vLocal.x = halfWidth; vLocal.y = 0.0f; vLocal.z = 0.0f;
 
-    // Parte vectorial del cuaternion
+    // Vector part of the quaternion
     Vector3 qv;
     qv.x = qx; qv.y = qy; qv.z = qz;
 
@@ -245,7 +245,7 @@ void calculateHeadWidth(const VRPosePlain& midPos,Vector3& pointRight,Vector3& p
 
     Vector3 worldOffset = vWorld;
 
-    // Aplicar a la posicion
+    // Apply to the head position
     pointRight = {
             midPos.position[0] + worldOffset.x,
             midPos.position[1] + worldOffset.y,
@@ -258,6 +258,8 @@ void calculateHeadWidth(const VRPosePlain& midPos,Vector3& pointRight,Vector3& p
             midPos.position[2] - worldOffset.z
     };
 }
+
+//Same concept as HeadWith, but this time the data parameter is different
 void calculateWristWidthFromJoint(const JointSamplePlain& joint, Vector3& pointRight, Vector3& pointLeft, float wristWidth) {
     const float halfWidth = wristWidth / 2.0f;
 
@@ -300,7 +302,7 @@ void calculateWristWidthFromJoint(const JointSamplePlain& joint, Vector3& pointR
     };
 }
 
-// Convierte metros a milimetros (solo posiciones)
+// Convert from meters to millimeters (could be left as it is, but mm is more common with c3d files)
 inline void metersToMillimeters(float& x, float& y, float& z) {
     const float k = 1000.0f;
     x *= k;
@@ -311,7 +313,7 @@ inline void metersToMillimeters(Vector3& v) {
     metersToMillimeters(v.x, v.y, v.z);
 }
 
-// Sistema coordenadas OpenXR to gait: X_g = -Z_old (delante)  Y_g = -X_old (izq)  Z_g =  Y_old (arriba)
+// // Axis conversion OpenXR -> Gait: X_g = -Z_old (towards)  Y_g = -X_old (left)  Z_g =  Y_old (up)
 inline void openxrToGaitAxes(float& x, float& y, float& z) {
     const float ox = x;
     const float oy = y;
@@ -325,7 +327,7 @@ inline void openxrToGaitAxes(Vector3& v) {
     openxrToGaitAxes(v.x, v.y, v.z);
 }
 
-// Multiplica q_out = q_a * q_b (para cambiar sistema de cuaterniones)
+// Quaternion multiplication q_out = q_a * q_b (Hamilton product). Used in next method
 inline void quatMul(const float ax, const float ay, const float az, const float aw,
                     const float bx, const float by, const float bz, const float bw,
                     float& rx, float& ry, float& rz, float& rw) {
@@ -335,7 +337,7 @@ inline void quatMul(const float ax, const float ay, const float az, const float 
     rw = aw*bw - ax*bx - ay*by - az*bz;
 }
 
-// Aplica el cambio de ejes OpenXR -> gait al cuaternio (x,y,z,w)
+// Apply OpenXR -> Gait axis change to a quaternion (x,y,z,w).
 inline void openxrToGaitAxesQuat(float& qx, float& qy, float& qz, float& qw) {
     // Cuaternion fijo que implementa la misma transformacion que openxrToGaitAxes en vectores
     const float ax =  0.5f;
@@ -352,12 +354,13 @@ inline void openxrToGaitAxesQuat(float& qx, float& qy, float& qz, float& qw) {
     qw = rw;
 }
 
-// --- Escritura real con ezc3d (version en memoria, simple) ---
+// Main function that builds an ezc3d::c3d object in memory and writes it to disk
+// using the information stored in frames_
 void C3DRecorder::writeC3D() {
-    // Creamos un C3D vacio
+    // Create an empty C3D
     ezc3d::c3d c3d;
 
-    // Nombres de puntos y canales
+    // Point and analog channel names
     std::vector<std::string> pointNames;
     std::vector<std::string> analogNames;
     buildPointNames(pointNames);
@@ -367,7 +370,7 @@ void C3DRecorder::writeC3D() {
     const size_t nbAnalogs = analogNames.size();
     const size_t nbFrames  = frames_.size();
 
-    // Declarar los puntos y canales para que los parametros se ajusten
+    // Declare points and analog channels so that parameters are consistent.
     for (const auto& name : pointNames) {
         c3d.point(name);
     }
@@ -375,7 +378,7 @@ void C3DRecorder::writeC3D() {
         c3d.analog(name);
     }
 
-    // Ajustar parametros basicos de RATE
+    // Basic RATE and UNITS parameters
     {
         // POINT:UNITS
         ezc3d::ParametersNS::GroupNS::Parameter pointUnits("UNITS");
@@ -386,16 +389,13 @@ void C3DRecorder::writeC3D() {
         pointRate.set(std::vector<double>{ static_cast<double>(frameRate_) });
         c3d.parameter("POINT", pointRate);
 
-        // ANALOG:RATE = frameRate tambien (simple: 1 sample analog por frame)
+        // ANALOG:RATE = frameRate as well (1 analog sample per frame).
         ezc3d::ParametersNS::GroupNS::Parameter analogRate("RATE");
         analogRate.set(std::vector<double>{ static_cast<double>(frameRate_) });
         c3d.parameter("ANALOG", analogRate);
     }
 
-    // Dejar que ezc3d actualice header segun parametros y datos
-    // (lo hace internamente cuando metemos frames).
-
-    // Construir frames uno a uno
+    // For each recorded frame, create a C3D frame and fill points + analogs.
     for (size_t i = 0; i < nbFrames; ++i) {
         const VRFrameDataPlain& f = frames_[i];
 
@@ -408,7 +408,7 @@ void C3DRecorder::writeC3D() {
 
             Points points(nbPoints);
 
-            // Inicializamos todos como invalidos (residual = -1)
+            // Start by setting all points to (0,0,0) with residual -1 (missing marker).
             for (size_t pi = 0; pi < nbPoints; ++pi) {
                 Point p;
                 p.x(0.0);
@@ -418,7 +418,7 @@ void C3DRecorder::writeC3D() {
                 points.point(p, static_cast<int>(pi));
             }
 
-            // Indices coherentes con buildPointNames
+            // Indices consistent with buildPointNames()
             const size_t IDX_HEAD        = 0;
             const size_t IDX_LFHD        = 1;
             const size_t IDX_RFHD        = 2;
@@ -449,11 +449,11 @@ void C3DRecorder::writeC3D() {
                 points.point(p, static_cast<int>(IDX_HEAD));
             }
 
-            // Cabeza: LFHD / RFHD
+            // Extra head markers LFHD / RFHD from head width
             Vector3 headRight, headLeft;
             calculateHeadWidth(f.hmdPose, headRight, headLeft, 0.15f);
 
-            // LFHD = lado izquierdo
+            // LFHD = left side
             openxrToGaitAxes(headLeft);
             metersToMillimeters(headLeft);
             {
@@ -465,7 +465,7 @@ void C3DRecorder::writeC3D() {
                 points.point(p, static_cast<int>(IDX_LFHD));
             }
 
-            // RFHD = lado derecho
+            // RFHD = right side
             openxrToGaitAxes(headRight);
             metersToMillimeters(headRight);
             {
@@ -477,7 +477,7 @@ void C3DRecorder::writeC3D() {
                 points.point(p, static_cast<int>(IDX_RFHD));
             }
 
-            // L_CTRL (siempre que este activo se supone que hay 0 joints pero metemos doble comprobacion)
+            // L_CTRL (if its valid it will have 0 joints but we do a double check)
             if (f.leftCtrl.isActive && f.leftHandJointCount==0) {
                 float x = f.leftCtrl.pose.position[0];
                 float y = f.leftCtrl.pose.position[1];
@@ -497,7 +497,7 @@ void C3DRecorder::writeC3D() {
                 }
             }
 
-            // R_CTRL (si esta activo)
+            // R_CTRL (if active)
             if (f.rightCtrl.isActive && f.rightHandJointCount==0) {
                 float x = f.rightCtrl.pose.position[0];
                 float y = f.rightCtrl.pose.position[1];
@@ -517,7 +517,7 @@ void C3DRecorder::writeC3D() {
                 }
             }
 
-            // Manos: joints L
+            // Hands: joints L
             for (int j = 0; j < f.leftHandJointCount && j < 26; ++j) {
                 const auto& s = f.leftHandJoints[j];
                 float x = s.px;
@@ -538,7 +538,7 @@ void C3DRecorder::writeC3D() {
                 }
             }
 
-            // Manos: joints R
+            // Hands: joints R
             for (int j = 0; j < f.rightHandJointCount && j < 26; ++j) {
                 const auto& s = f.rightHandJoints[j];
                 float x = s.px;
@@ -559,8 +559,8 @@ void C3DRecorder::writeC3D() {
                 }
             }
 
-            // Puntos extra de muneca tipo LWRA/LWRB/RWRA/RWRB
-            // Mano izquierda: joint 0 = WRIST
+            // Extra wrist points LWRA/LWRB/RWRA/RWRB
+            // Left hand: joint 0 = WRIST
             if (f.leftHandJointCount > 0) {
                 const auto& wrist = f.leftHandJoints[0];
                 if (wrist.hasPose) {
@@ -592,7 +592,7 @@ void C3DRecorder::writeC3D() {
                 }
             }
 
-            // Mano derecha
+            // Right hand
             if (f.rightHandJointCount > 0) {
                 const auto& wrist = f.rightHandJoints[0];
                 if (wrist.hasPose) {
@@ -628,13 +628,13 @@ void C3DRecorder::writeC3D() {
             frame.points() = points;
         }
 
-        // --- Analogicos (cuaterniones + flag) ---
+        // --- Analogs (cuaterniones + flag) ---
         {
             using ezc3d::DataNS::AnalogsNS::Channel;
             using ezc3d::DataNS::AnalogsNS::SubFrame;
             using ezc3d::DataNS::AnalogsNS::Analogs;
             const size_t nbAnalogs = analogNames.size();
-            // Solo 1 subframe por frame (ANALOG:RATE == POINT:RATE)
+            // Single subframe per frame (ANALOG:RATE == POINT:RATE)
             SubFrame subframe;
             subframe.nbChannels(nbAnalogs);
 
@@ -646,7 +646,7 @@ void C3DRecorder::writeC3D() {
 
             size_t idx = 0;
 
-            // HMD_q*
+            // HMD quaternion
             {
                 float qx = f.hmdPose.rotation[0];
                 float qy = f.hmdPose.rotation[1];
@@ -661,7 +661,7 @@ void C3DRecorder::writeC3D() {
                 setChan(idx++, qw);
             }
 
-            // L_CTRL_q*
+            // L_CTRL quaternion
             if (f.leftCtrl.isActive && f.leftHandJointCount==0){
                 float qx = f.leftCtrl.pose.rotation[0];
                 float qy = f.leftCtrl.pose.rotation[1];
@@ -676,7 +676,7 @@ void C3DRecorder::writeC3D() {
                 setChan(idx++, qw);
             }
 
-            // R_CTRL_q*
+            // R_CTRL quaternion
             if (f.rightCtrl.isActive && f.rightHandJointCount==0){
                 float qx = f.rightCtrl.pose.rotation[0];
                 float qy = f.rightCtrl.pose.rotation[1];
@@ -691,7 +691,7 @@ void C3DRecorder::writeC3D() {
                 setChan(idx++, qw);
             }
 
-            // L_Joints
+            // L_Joints quaternion
             for (int j = 0; j < f.leftHandJointCount && j < 26; ++j) {
                 const auto& s = f.leftHandJoints[j];
                 float qx = s.qx, qy = s.qy, qz = s.qz, qw = s.qw;
@@ -701,7 +701,7 @@ void C3DRecorder::writeC3D() {
                 setChan(idx++, qz);
                 setChan(idx++, qw);
             }
-            // R_Joints
+            // R_Joints quaternion
             for (int j = 0; j < f.rightHandJointCount && j < 26; ++j) {
                 const auto& s = f.rightHandJoints[j];
                 float qx = s.qx, qy = s.qy, qz = s.qz, qw = s.qw;
@@ -712,13 +712,13 @@ void C3DRecorder::writeC3D() {
                 setChan(idx++, qw);
             }
 
-            while (idx + 1 < nbAnalogs) { // dejamos el ultimo para RealTime
+            while (idx + 1 < nbAnalogs) { // we leave the last for Realtime
                 setChan(idx++, 0.0f);
             }
 
-            // Canal extra: tiempo real del frame en segundos
+            // Extra channel for real time
             if (nbAnalogs > 0) {
-                const size_t timeIdx = nbAnalogs - 1; // siempre el ultimo
+                const size_t timeIdx = nbAnalogs - 1; // always last no matter size
                 setChan(timeIdx, static_cast<float>(f.timestampSec));
             }
 
@@ -727,11 +727,11 @@ void C3DRecorder::writeC3D() {
             frame.analogs() = analogs;
         }
 
-        // Anadimos el frame al c3d
+        // Here we finally add the frame to c3d file
         c3d.frame(frame);
     }
 
-    // Por ultimo, escribimos el archivo en disco
+    // Last, write the full c3d file to disk
     c3d.write(filePath_);
     LOGI("C3DRecorder: file written OK: '%s'", filePath_.c_str());
 }

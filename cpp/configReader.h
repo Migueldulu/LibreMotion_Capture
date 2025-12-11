@@ -2,23 +2,43 @@
 #include <string>
 #include "TiposTelemetria.h"
 
-// Lector de configuracion inicial guardada en:
-//   /sdcard/Android/data/<paquete>/files/initialConfig.json
+// Reader for the initial configuration stored in:
+//   /sdcard/Android/data/<package>/files/initialConfig.json
+//
+// This JSON file typically contains (tag names must be the same):
+//   - "endpoint":     base URL for the REST API
+//   - "apiKey":       API key for the backend
+//   - "framesPerFile": number of frames per JSON chunk
+//   - "frameRate":    sampling frequency in Hz
+//   - "handTracking": boolean,
+//   - "primaryButton":  boolean,
+//   - "secondaryButton": boolean,
+//   - "grip", "trigger", "joystick": booleans,
+
 
 namespace configReader {
-    // Devuelve la ruta construida a partir de /proc/self/cmdline
+    // Builds the expected path for initialConfig.json based on /proc/self/cmdline.
+    // On Android, the process name matches the package name, so we use:
+    //   /sdcard/Android/data/<package>/files/initialConfig.json
+    // Returns true on success and writes the full path into outPath.
     bool getExpectedConfigPath(std::string& outPath);
 
-    // Lee un fichero completo a string (binario opaco)
+    // Reads a file completely into a string (opaque binary or text).
+    // Returns true on success.
     bool readFileToString(const std::string& path, std::string& outText);
 
-    // Lee el archivo, logea contenido (truncado) y rellena endpointUrl/apiKey de outCfg.
+    // Reads initialConfig.json, logs its content and fills the endpointUrl, apiKey, framesPerFile and feature flags of outCfg.
+    // It starts from built-in defaults and only overrides values found in the JSON file. Returns:
+    //   true  if the file could be read and parsed (even if some keys are missing),
+    //   false if the file could not be read at all, so defaults remain.
     bool setConfig(UploaderConfig& outCfg);
 
-    // Obtiene frameRate desde initialConfig.json; si falta, 60. Si está fuera de [1,240], se ignora y se usa 60.
+    // Reads only the "frameRate" field from initialConfig.json, with a default value if the file or the key is missing.
+    // This is separated from setConfig() so that the TelemetriaAPI can return the frameRate to Unity/UE
     bool getFrameRate(int& outFrameRate);
 
     // bit0=handTracking, bit1=primary, bit2=secondary, bit3=grip, bit4=trigger, bit5=joystick
+    // This is used by the public C API to expose feature flags as a single int.
     inline unsigned getFeatureFlagsBitmask(const UploaderConfig& cfg) {
         unsigned m = 0;
         if (cfg.handTracking)  m |= 1u << 0;

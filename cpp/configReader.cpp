@@ -11,21 +11,23 @@
 #define LOGI(...) __android_log_print(ANDROID_LOG_INFO,  LOG_TAG, __VA_ARGS__)
 #define LOGE(...) __android_log_print(ANDROID_LOG_ERROR, LOG_TAG, __VA_ARGS__)
 
-// -------------------- Defaults globales --------------------
+// Default config in case JSON file is missing or they are not defined
 static constexpr const char* kDefaultEndpoint = "http://localhost:1414";
 static constexpr const char* kDefaultApiKey = "non_existant";
 static constexpr int kDefaultFramesPerFile = 200;
 static constexpr int kDefaultFrameRate = 60;
 
-// Nota: evitamos JNI a proposito en FASE 1. El nombre de paquete
-// se obtiene de /proc/self/cmdline suele ser el nombre del proceso, que por defecto coincide con el package name de la app.
+// The package name is obtained from /proc/self/cmdline. On Android, the process name
+// is usually the same as the app package name.
 static bool getPackageNameFromProc(std::string& outPkg) {
     std::ifstream f("/proc/self/cmdline", std::ios::in | std::ios::binary);
     if (!f) return false;
     std::string buf;
-    std::getline(f, buf, '\0'); // primer token hasta \0
+    // First token up to '\0'
+    std::getline(f, buf, '\0');
     if (buf.empty()) return false;
 
+    // Remove optional suffix after ':', e.g. "com.app:unity"
     size_t colon = buf.find(':');
     if (colon != std::string::npos) buf.resize(colon);
 
@@ -33,23 +35,26 @@ static bool getPackageNameFromProc(std::string& outPkg) {
     return !outPkg.empty();
 }
 
+// Helpers for tiny JSON parsing. We do not use a full JSON library
+// because initialConfig.json has a simple, predictable structure so we keep it simple (and smaller future aar).
 namespace {
-    // Busca "clave" : "valor" y devuelve valor; ignora espacios.
+    // Looks for: "key" : "value" (with optional spaces) and extracts value.
     static bool extractJsonString(const std::string& text, const std::string& key, std::string& out) {
-        // Formas posibles: "key" : "value"  (con espacios opcionales)
         const std::string q = "\"" + key + "\"";
         size_t p = text.find(q);
         if (p == std::string::npos) return false;
+
         p = text.find(':', p + q.size());
-        if (p == std::string::npos) return false;
-        // saltar espacios
+        if (p == std::string::npos) return false
+
+        // Skip colon and whitespace
         while (p < text.size() && (text[p] == ':' || text[p] == ' ' || text[p] == '\t' || text[p] == '\r' || text[p] == '\n')) ++p;
         if (p >= text.size() || text[p] != '"') return false;
-        ++p; // dentro de la cadena
+        ++p; // now inside the string
         std::string val;
         while (p < text.size()) {
             char c = text[p++];
-            if (c == '\\') { // manejo basico de escape de comillas
+            if (c == '\\') {  // Minimal escape handling: copy next char as is
                 if (p < text.size()) {
                     char n = text[p++];
                     val.push_back(n);
@@ -64,6 +69,7 @@ namespace {
         return !out.empty();
     }
 
+    // Looks for: "key" : <integer> and stores it in out.
     static bool extractJsonInt(const std::string& text, const std::string& key, int& out) {
         const std::string kq = "\"" + key + "\"";
         size_t p = text.find(kq);
@@ -90,6 +96,7 @@ namespace {
         return true;
     }
 
+    // Looks for: "key" : true/false (lowercase)
     static bool extractJsonBool(const std::string& text, const std::string& key, bool& out) {
         const std::string kq = "\"" + key + "\"";
         size_t p = text.find(kq);
@@ -109,6 +116,7 @@ namespace {
 
 namespace configReader {
 
+    // Build expected path: /sdcard/Android/data/<package>/files/initialConfig.json
     bool getExpectedConfigPath(std::string& outPath) {
         std::string pkg;
         if (!getPackageNameFromProc(pkg)) {
@@ -119,10 +127,10 @@ namespace configReader {
         return true;
     }
 
+    // Single attempt to read the file fully into a string.
     static bool readFileToStringOnce(const std::string& path, std::string& outText) {
         std::ifstream in(path, std::ios::in | std::ios::binary);
         if (!in) {
-            // Nota: fstream no siempre setea errno, pero suele dar pista
             LOGE("configReader: open failed for %s (errno=%d: %s)",
                  path.c_str(), errno, strerror(errno));
             return false;
@@ -133,10 +141,11 @@ namespace configReader {
         return true;
     }
 
+    // Read a file to string with /sdcard → /storage/emulated/0 fallback.
     bool readFileToString(const std::string& path, std::string& outText) {
-        // 1) Intento principal tal cual
+        // 1) Main attempt with the given path
         if (readFileToStringOnce(path, outText)) return true;
-        // 2) 🔁 Fallback: /sdcard → /storage/emulated/0 (alias del user 0)
+        // 2) Fallback: if path starts with /sdcard/, try /storage/emulated/0/
         const std::string sdcard = "/sdcard/";
         if (path.rfind(sdcard, 0) == 0) {
             std::string alt = std::string("/storage/emulated/0/") + path.substr(sdcard.size());
@@ -146,6 +155,7 @@ namespace configReader {
         return false;
     }
 
+    // Read initialConfig.json and fill UploaderConfig with endpoint/apiKey/framesPerFile/flags.
     bool setConfig(UploaderConfig& outCfg) {
         outCfg.endpointUrl   = kDefaultEndpoint;
         outCfg.apiKey        = kDefaultApiKey;
@@ -168,7 +178,7 @@ namespace configReader {
             return false;
         }
 
-        // Log del contenido (truncado)
+        // Log file content (truncated if too large bc of wrong file). For debugging.
         const size_t kMaxLog = 4096;
         if (text.size() <= kMaxLog) {
             LOGI("configReader: read %zu bytes from %s\n---BEGIN initialConfig.json---\n%.*s\n---END initialConfig.json---",
@@ -178,6 +188,7 @@ namespace configReader {
                  text.size(), path.c_str(), kMaxLog, (int)kMaxLog, text.c_str());
         }
 
+        // Start from current values (defaults) and override if keys exist.
         std::string endpoint = outCfg.endpointUrl;
         std::string key = outCfg.apiKey;
         int framesPerFile = outCfg.framesPerFile;
@@ -192,7 +203,7 @@ namespace configReader {
         outCfg.apiKey        = key;
         outCfg.framesPerFile = framesPerFile;
 
-        // Flags (default=false si faltan)
+        // Feature flags (if any are missing, they remain at default=false).
         bool vb;
         if (extractJsonBool(text, "handTracking", vb))  outCfg.handTracking  = vb;
         if (extractJsonBool(text, "primaryButton", vb)) outCfg.primaryButton = vb;
@@ -201,10 +212,11 @@ namespace configReader {
         if (extractJsonBool(text, "trigger", vb))       outCfg.trigger       = vb;
         if (extractJsonBool(text, "joystick", vb))      outCfg.joystick      = vb;
 
-        return true; // lectura realizada (aunque alguna clave falte)
+        // Reading was done (even if some keys were missing).
+        return true;
     }
 
-    //lo leo separado de setConfig, porque el outCfg se queda aqui y el FrameRate se envía a Unity/UE
+    // Separated read of FramerRate because it will be returned to Unity/UnrealEngine
     bool getFrameRate(int& outFrameRate) {
         int result = kDefaultFrameRate;
         std::string path, text;
