@@ -1,0 +1,51 @@
+Lo más lioso para mí es todo lo que va relacionado con JNI (y JavaVM y Activity). Basicamente y mal explicado, es lo que necesito para comunicar java y c++, no haría falta si añado toda la estructura de uploads HTTP en c++, pero en Android para usar sockets HTTP usando c++ hay que utilizar librerías adicionales que aumentaban mucho el tamaño de mi libreria, pero es que encima esas librerias no incluyen todas las politicas de seguridad que requieren algunas bases de datos (incluida supabase, por eso he aprendido esto), y en definitiva se requieren más certificados y rechazan la conexion; vi que era muy complicado y no llegué ni a intentarlo, me pasé a hacerlo en java que era solo utilizar la clase de ejemplo que usa todo el mundo.
+Todo lo demás creo que es más evidente, el uso de hilos no lo dominaba mucho, pero es por el problema que hablamos de que si no se hace de forma paralela, mientras se sube el chunk deja de grabar frames y se pierden bastantes.
+
+
+TelemetriaAPI.h / TelemetriaAPI.cpp: API publica (C) que usan Unity/Unreal. Gestiona el ciclo de vida:
+●	telemetry_set_java_context(...) guarda JavaVM y Activity para JNI (lo necesito para hacer el puente de c++ a java).
+●	telemetry_initialize(...) carga initialConfig.json y prepara el uploader + gestor.
+●	telemetry_record_frame(...) recibe cada frame y lo manda al gestor para bufferizar/subir
+telemetry_force_upload()
+●	telemetry_shutdown()
+
+
+GestorTelemetria.h / GestorTelemetria.cpp: Guarda los frames en buffers y los va subiendo en segundo plano.
+●	recordFrame(...) acumula frames hasta framesPerFile (por defecto 150, pero tambien es configurable).
+●	workerLoop() es el hilo que serializa a JSON y llama al uploader.
+●	serializeAndSend(...) + toJsonFlat(...) construyen el JSON final y lo envian.
+
+
+AndroidUploader.h / AndroidUploader.cpp: Puente JNI C++ → Java para hacer HTTP.
+●	setJavaContext(...) recibe VM/Activity.
+●	initialize(...) guarda endpoint/apiKey.
+●	uploadJson(...) prepara headers y llama a callJavaMakeRequest(...).
+callJavaMakeRequest(...) ejecuta AyudanteHttp.makeRequest(...) via JNI (POST).
+
+
+AyudanteHttp.java: (se encuentra en  LibreriaTelemetria/AARTelemetria/src/main/java/io/github/migueldulu/telemetria/AyudanteHttp.java)  Implementacion real del HTTP en Java (HttpURLConnection). -> está bastante copiado de esta clase, pero hay muchos ejemplos parecidos en internet https://www.codejava.net/java-se/networking/an-http-utility-class-to-send-getpost-request
+●	makeRequest(method, url, body, headers) ejecuta la peticion y devuelve byte[].
+●	Devuelve el body (o un JSON de error si hay excepcion) y añade HTTP_STATUS:<code> si no es 2xx.
+
+configReader.h / configReader.cpp: Lee initialConfig.json desde el almacenamiento del dispositivo.
+●	setConfig(UploaderConfig&) carga endpoint, apiKey, framesPerFile y flags para saber que queremos guardar (como botones de mandos, handtracking etc).
+
+
+TiposTelemetria.h: Estructuras de configuracion para subir a http.
+●	TelemetryConfigPlain (sessionId/deviceInfo que lo calculo y devuelvo en Unity/UE).
+●	UploaderConfig (endpoint, apiKey, framesPerFile y feature flags).
+TiposVR.h: Estructuras de datos de un frame (frame + struct controller + struct handJoint).
+●	VRFrameDataPlain contiene timestamp, hmdPose, controladores y joints.
+
+
+
+
+Como al final he puesto todas te dejo tambien C3Drecorder aunque como su nombre indica solo es para el C3D no tiene que ver con la subida a JSON 
+C3DRecorder: Módulo encargado de la generación de archivos C3D.Se llama desde la API en initialize y en cada telemetry_record_frame()
+●	C3Dinitialize(...) prepara la grabación (ruta del archivo, frameRate, limpieza de buffers).
+●	C3DrecordFrame(...) almacena en memoria cada frame de telemetría
+●	C3Dfinalize() convierte todos los frames acumulados en un archivo .c3d usando la librería ezc3d https://github.com/pyomeca/ezc3d
+Además
+-	Las posiciones se convierten a milímetros y al sistema de ejes "estándar" de C3D.
+-	Se generan los marcadores 3D (cabeza, manos, muñecas).
+
