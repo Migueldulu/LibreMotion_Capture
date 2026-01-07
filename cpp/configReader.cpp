@@ -45,7 +45,7 @@ namespace {
         if (p == std::string::npos) return false;
 
         p = text.find(':', p + q.size());
-        if (p == std::string::npos) return false
+        if (p == std::string::npos) return false;
 
         // Skip colon and whitespace
         while (p < text.size() && (text[p] == ':' || text[p] == ' ' || text[p] == '\t' || text[p] == '\r' || text[p] == '\n')) ++p;
