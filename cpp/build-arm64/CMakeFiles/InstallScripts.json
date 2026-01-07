@@ -1,0 +1,9 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/miguel/AndroidStudioProjects/AARv2Lector/cpp/build-arm64/cmake_install.cmake",
+		"C:/Users/miguel/AndroidStudioProjects/AARv2Lector/cpp/build-arm64/thirdparty/ezc3d/cmake_install.cmake",
+		"C:/Users/miguel/AndroidStudioProjects/AARv2Lector/cpp/build-arm64/thirdparty/ezc3d/binding/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

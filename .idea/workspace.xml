@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="49f7d838-f67d-401b-b791-938c2ce0dffb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Unity_Implementation/Plugins/Android/AARTelemetria-debug.aar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Unity_Implementation/Plugins/telemetria/TelemetriaAPI.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Unity_Implementation/Scripts/TelemetriaBootstrap.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Unreal_Implementation/Plugins/Telemetry/Resources/Icon128.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Unreal_Implementation/Plugins/Telemetry/Source/Telemetry/Private/Telemetry.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Unreal_Implementation/Plugins/Telemetry/Source/Telemetry/Private/TelemetryComponent.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Unreal_Implementation/Plugins/Telemetry/Source/Telemetry/Public/TelemetryComponent.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Unreal_Implementation/Plugins/Telemetry/Source/Telemetry/Telemetry.Build.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Unreal_Implementation/Plugins/Telemetry/Source/Telemetry/Telemetry_APL.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Unreal_Implementation/Plugins/Telemetry/Source/ThirdParty/AARTelemetria.aar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Unreal_Implementation/Plugins/Telemetry/Source/ThirdParty/Android/arm64-v8a/libtelemetria.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Unreal_Implementation/Plugins/Telemetry/Telemetry.uplugin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibreriaTelemetria/.gradle/8.7/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/LibreriaTelemetria/.gradle/8.7/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibreriaTelemetria/.gradle/8.7/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/LibreriaTelemetria/.gradle/8.7/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibreriaTelemetria/.gradle/8.7/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/LibreriaTelemetria/.gradle/8.7/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibreriaTelemetria/.gradle/8.7/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/LibreriaTelemetria/.gradle/8.7/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibreriaTelemetria/.gradle/8.7/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/LibreriaTelemetria/.gradle/8.7/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibreriaTelemetria/.gradle/8.7/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/LibreriaTelemetria/.gradle/8.7/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibreriaTelemetria/.gradle/9.1.0/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/LibreriaTelemetria/.gradle/9.1.0/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibreriaTelemetria/.gradle/9.1.0/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/LibreriaTelemetria/.gradle/9.1.0/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibreriaTelemetria/.gradle/9.1.0/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/LibreriaTelemetria/.gradle/9.1.0/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibreriaTelemetria/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/LibreriaTelemetria/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibreriaTelemetria/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/LibreriaTelemetria/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibreriaTelemetria/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/LibreriaTelemetria/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibreriaTelemetria/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/LibreriaTelemetria/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibreriaTelemetria/AARTelemetria/build/intermediates/aar_main_jar/debug/syncDebugLibJars/classes.jar" beforeDir="false" afterPath="$PROJECT_DIR$/LibreriaTelemetria/AARTelemetria/build/intermediates/aar_main_jar/debug/syncDebugLibJars/classes.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibreriaTelemetria/AARTelemetria/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/LibreriaTelemetria/AARTelemetria/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibreriaTelemetria/AARTelemetria/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/io/github/migueldulu/telemetria/AyudanteHttp.class" beforeDir="false" afterPath="$PROJECT_DIR$/LibreriaTelemetria/AARTelemetria/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/io/github/migueldulu/telemetria/AyudanteHttp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibreriaTelemetria/AARTelemetria/build/intermediates/library_and_local_jars_jni/debug/copyDebugJniLibsProjectAndLocalJars/jni/arm64-v8a/libtelemetria.so" beforeDir="false" afterPath="$PROJECT_DIR$/LibreriaTelemetria/AARTelemetria/build/intermediates/library_and_local_jars_jni/debug/copyDebugJniLibsProjectAndLocalJars/jni/arm64-v8a/libtelemetria.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibreriaTelemetria/AARTelemetria/build/intermediates/merged_jni_libs/debug/mergeDebugJniLibFolders/out/arm64-v8a/libtelemetria.so" beforeDir="false" afterPath="$PROJECT_DIR$/LibreriaTelemetria/AARTelemetria/build/intermediates/merged_jni_libs/debug/mergeDebugJniLibFolders/out/arm64-v8a/libtelemetria.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibreriaTelemetria/AARTelemetria/build/intermediates/merged_native_libs/debug/mergeDebugNativeLibs/out/lib/arm64-v8a/libtelemetria.so" beforeDir="false" afterPath="$PROJECT_DIR$/LibreriaTelemetria/AARTelemetria/build/intermediates/merged_native_libs/debug/mergeDebugNativeLibs/out/lib/arm64-v8a/libtelemetria.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibreriaTelemetria/AARTelemetria/build/intermediates/stripped_native_libs/debug/stripDebugDebugSymbols/out/lib/arm64-v8a/libtelemetria.so" beforeDir="false" afterPath="$PROJECT_DIR$/LibreriaTelemetria/AARTelemetria/build/intermediates/stripped_native_libs/debug/stripDebugDebugSymbols/out/lib/arm64-v8a/libtelemetria.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibreriaTelemetria/AARTelemetria/build/outputs/aar/AARTelemetria-debug.aar" beforeDir="false" afterPath="$PROJECT_DIR$/LibreriaTelemetria/AARTelemetria/build/outputs/aar/AARTelemetria-debug.aar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibreriaTelemetria/AARTelemetria/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/LibreriaTelemetria/AARTelemetria/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibreriaTelemetria/AARTelemetria/src/main/jniLibs/arm64-v8a/libtelemetria.so" beforeDir="false" afterPath="$PROJECT_DIR$/LibreriaTelemetria/AARTelemetria/src/main/jniLibs/arm64-v8a/libtelemetria.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibreriaTelemetria/build/reports/problems/problems-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/LibreriaTelemetria/build/reports/problems/problems-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unity_Implementation/README_Unity.md" beforeDir="false" afterPath="$PROJECT_DIR$/Unity_Implementation/README_Unity.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unreal_Implementation/README_Unreal.md" beforeDir="false" afterPath="$PROJECT_DIR$/Unreal_Implementation/README_Unreal.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/thirdparty/ezc3d" beforeDir="false" afterPath="$PROJECT_DIR$/cpp/thirdparty/ezc3d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/thirdparty/ezc3d/.github/workflows/publish_matlab_binaries.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/thirdparty/ezc3d/.github/workflows/publish_to_pypi.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/thirdparty/ezc3d/.github/workflows/run_codecoverage.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/thirdparty/ezc3d/.github/workflows/run_matlab_tests.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/thirdparty/ezc3d/.github/workflows/run_tests.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/thirdparty/ezc3d/.vscode/settings.json.default" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/thirdparty/ezc3d/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cpp/thirdparty/ezc3d/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/thirdparty/ezc3d/doc/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/thirdparty/ezc3d/doc/Doxyfile.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/thirdparty/ezc3d/doc/paper/paper.bib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/thirdparty/ezc3d/doc/paper/paper.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/thirdparty/ezc3d/examples/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/thirdparty/ezc3d/examples/create_and_read_example.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/thirdparty/ezc3d/examples/force_plate_example.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/thirdparty/ezc3d/examples/from_users/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/thirdparty/ezc3d/examples/from_users/python3/btk_like_example.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/thirdparty/ezc3d/examples/matlab/create_and_read.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/thirdparty/ezc3d/examples/matlab/force_platform.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/thirdparty/ezc3d/examples/modify_c3d_example.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/thirdparty/ezc3d/examples/python3/create_and_read.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/thirdparty/ezc3d/examples/python3/force_platform.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/thirdparty/ezc3d/examples/python3/modify.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/thirdparty/ezc3d/test/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/thirdparty/ezc3d/test/common_utils.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/thirdparty/ezc3d/test/matlab/test_binder_matlab.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/thirdparty/ezc3d/test/matlab/test_binder_matlab_force_platform.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/thirdparty/ezc3d/test/python3/test_binder_python.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/thirdparty/ezc3d/test/test_ezc3d.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/thirdparty/ezc3d/test/test_math.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/thirdparty/ezc3d/test/test_modules.cpp" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="35lIRCxGfvW24A8kKj9NA2pKJcF" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/miguel/AndroidStudioProjects/AARv2Lector/Unreal_Implementation&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\miguel\AndroidStudioProjects\AARv2Lector\Unreal_Implementation" />
+      <recent name="C:\Users\miguel\AndroidStudioProjects\AARv2Lector\Unity_Implementation\Plugins\Android" />
+      <recent name="C:\Users\miguel\AndroidStudioProjects\AARv2Lector\Unity_Implementation" />
+      <recent name="C:\Users\miguel\AndroidStudioProjects\AARv2Lector\LibreriaTelemetria\AARTelemetria\src\main\jniLibs\arm64-v8a" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\miguel\AndroidStudioProjects\AARv2Lector\Unity_Implementation\Scripts" />
+    </key>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="49f7d838-f67d-401b-b791-938c2ce0dffb" name="Changes" comment="" />
+      <created>1763678220910</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1763678220910</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.so" />
+  </component>
+</project>

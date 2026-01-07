@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:android="http://schemas.android.com/apk/res/android">
+	<trace enable="true"/>
+	<init>
+		<!-- Vierte variables clave al log para verificar rutas -->
+		<log text="UPL: PluginDir = $S(PluginDir)"/>
+		<log text="UPL: BuildDir  = $S(BuildDir)"/>
+	</init>
+
+	<!-- Copiamos el AAR a la raiz del modulo 'app' ANTES de Gradle -->
+	<prebuildCopies>
+		<copyFile
+		  src="$S(PluginDir)/../ThirdParty/AARTelemetria.aar"
+		  dst="$S(BuildDir)/app/AARTelemetria.aar"
+		  force="true"/>
+	</prebuildCopies>
+
+	<!-- Por compatibilidad en layouts antiguos con subcarpeta 'gradle' -->
+	<gradleCopies>
+		<copyFile
+		  src="$S(PluginDir)/../ThirdParty/AARTelemetria.aar"
+		  dst="$S(BuildDir)/gradle/app/AARTelemetria.aar"
+		  force="true"/>
+	</gradleCopies>
+
+	<!-- Hacemos que Gradle consuma el AAR desde la raiz del modulo -->
+	<buildGradleAdditions>
+		<insert>
+			dependencies {
+			implementation files('AARTelemetria.aar')
+			}
+		</insert>
+	</buildGradleAdditions>
+
+	<manifestAdditions>
+		<![CDATA[
+      <manifest>
+        <uses-permission android:name="android.permission.INTERNET"/>
+		<uses-permission android:name="com.oculus.permission.HAND_TRACKING" />
+		<uses-feature android:name="oculus.software.handtracking" />
+      </manifest>
+    ]]>
+	</manifestAdditions>
+
+	<proguardAdditions>
+		<addRule value="-keep class io.github.migueldulu.telemetria.** { *; }"/>
+	</proguardAdditions>
+</root>

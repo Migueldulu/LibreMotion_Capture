@@ -14,6 +14,7 @@ Este repositorio incluye:
 - Wrapper Android empaquetado como AAR para su uso en Unity en /LibreriaTelemetria
 - Scripts para el uso de la libreria en Unity
 - Plug in para el uso de la libreria en Unreal Engine
+- Ejemplo de JSON de configuración inicial `initialConfig.json`
 - Scripts y configuracion necesarios para la compilacion
 
 ---

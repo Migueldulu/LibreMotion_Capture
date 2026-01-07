@@ -1,0 +1,12 @@
+{
+  "endpoint": "https://webhook.site/f5597772-bc36-46a6-9216-92625142b7ad",
+  "apiKey": "sb_publishable_6lmLqzJKoN3_AMLn--wZZg_ch1QWcaf",
+  "framesPerFile": 150,
+  "frameRate": 72,
+  "handTracking": true,
+  "primaryButton": true,
+  "secondaryButton":true,
+  "grip":true,
+  "trigger":true,
+  "joystick":true
+}
