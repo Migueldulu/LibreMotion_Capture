@@ -2,7 +2,7 @@
 #include <jni.h>
 #include <string>
 #include <vector>
-#include "TiposTelemetria.h"
+#include "TelemetryTypes.h"
 
 // Uploader that calls the Java helper AyudanteHttp.makeRequest via JNI.
 // This class does NOT perform HTTP by itself; it just bridges between

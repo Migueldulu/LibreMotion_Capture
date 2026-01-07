@@ -1,6 +1,6 @@
 #pragma once
 #include <string>
-#include "TiposTelemetria.h"
+#include "TelemetryTypes.h"
 
 // Reader for the initial configuration stored in:
 //   /sdcard/Android/data/<package>/files/initialConfig.json

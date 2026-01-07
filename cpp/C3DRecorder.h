@@ -3,8 +3,8 @@
 #include <vector>
 #include <mutex>
 
-#include "TiposTelemetria.h"
-#include "TiposVR.h"
+#include "TelemetryTypes.h"
+#include "VRTypes.h"
 
 // Small helper that records one C3D file per VR session.
 // It is called from TelemetriaAPI: initialize -> recordFrame (many times) -> finalize.
